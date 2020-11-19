@@ -1,6 +1,8 @@
-// $body-color: rgb(224, 58, 58);
-// $body-bg: #ccc;
-// $font-size-base: 1.2rem;
+$main-color: rgb(151, 50, 118);
+
+$body-color: $main-color;
+//$body-bg: rgb(255, 255, 255);
+$font-size-base: 1.2rem;
 
 .map-container {
   overflow: hidden;
@@ -78,7 +80,7 @@
 }
 
 // home screen images
-
+/*
 @keyframes animatedBackground {
   from {
     xtransform: translate(0);
@@ -116,8 +118,193 @@
 }
 
 .s8-img-anim {
-  overflow: hidden;
-  width: 100%;
-  height: 980px;
+  //overflow: hidden;
+  //width: 100%;
+  //height: 980px;
   // border: 3px solid red;
+
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  perspective: 100px;
+  color: white;
+}
+*/
+// ############
+
+/**
+ START PAGE - full screen iamge with section content
+
+*/
+header.start-page-container {
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  perspective: 100px;
+  color: white;
+}
+
+.start-page {
+  height: 100%;
+  height: -moz-available; /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
+  width: 100%;
+  position: fixed;
+  display: table; /* to center section inside */
+
+  opacity: 0; /* hide default value */
+}
+
+.bg-img {
+  background-position-x: 50%;
+  background-position-y: 50%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  height: 100%;
+  height: -moz-available; /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
+  width: 100%;
+}
+
+.bg-img-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(../img/img-1.jpg);
+}
+
+.bg-img-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(../img/img-2.jpg);
+}
+.bg-img-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(../img/img-3.jpg);
+}
+
+.start-page section {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.start-page h1,
+.start-page h2 {
+  color: white;
+  font-weight: 800;
+  border: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header a.control {
+  text-decoration: none;
+
+  &:hover {
+    background-color: $main-color;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.start-page.show {
+  opacity: 1;
+  transition: opacity 2s;
+
+  animation-name: fade-slide-down;
+  animation-duration: 15s;
+  animation-delay: initial;
+  animation-iteration-count: infinite;
+  animation-direction: initial;
+  animation-fill-mode: forwards;
+  animation-play-state: initial;
+}
+
+.start-page.hide {
+  opacity: 0;
+  /*transition: opacity 2s;*/
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* Animations */
+
+@keyframes fade-slide-down {
+  0% {
+    transform: translate3d(0.25em, 0.25em, 0.25em);
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0.25em, 0.25em, 0.25em);
+  }
+}
+
+.navbar {
+  font-size: 1.5rem;
 }

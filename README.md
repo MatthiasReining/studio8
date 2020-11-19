@@ -4,8 +4,13 @@
 
 ```bash
 dnf update -y
-dnf install -y nginx nano git
+dnf install -y epel-release
+dnf install -y nginx nano git snapd
+
 systemctl enable nginx && systemctl start nginx
+
+# install certbot
+curl -O https://dl.eff.org/certbot-auto && mv -f certbot-auto /usr/local/bin/certbot-auto && chmod 0755 /usr/local/bin/certbot-auto
 
 mkdir -p /data/www/studio8
 chown studio8:studio8 -R /data/www/studio8
@@ -18,6 +23,14 @@ su studio8
 ```
 
 Copy `id_github_rsa.pub` to `/home/studio8/.ssh/authorized_keys`
+
+Config Server
+
+Install Let's Encrypt
+
+```bash
+/usr/local/bin/certbot-auto --nginx
+```
 
 ## server setup
 
