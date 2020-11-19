@@ -1,5 +1,13 @@
 # studio8
 
+# Simple Server
+
+```bash
+dnf update -y
+dnf install -y nginx
+systemctl enable nginx && systemctl start nginx
+```
+
 ## server setup
 
 CentOS 8 at Hetzner Cloud:
