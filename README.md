@@ -4,9 +4,20 @@
 
 ```bash
 dnf update -y
-dnf install -y nginx
+dnf install -y nginx nano git
 systemctl enable nginx && systemctl start nginx
+
+mkdir -p /data/www/studio8
+chown studio8:studio8 -R /data/www/studio8
+
+adduser studio8
+su studio8
+(umask 077 && test -d /home/studio8/.ssh || mkdir /home/studio8/.ssh)
+(umask 077 && touch /home/studio8/.ssh/authorized_keys)
+
 ```
+
+Copy `id_github_rsa.pub` to `/home/studio8/.ssh/authorized_keys`
 
 ## server setup
 
