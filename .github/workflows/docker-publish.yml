@@ -15,7 +15,7 @@ jobs:
       uses: burnett01/rsync-deployments@4.1
       with:
         switches: -avzr --delete
-        path: src/
+        path: app/
         remote_path: /data/www/studio8/
         remote_host: studio8-kosmetik.de
         remote_user: john
