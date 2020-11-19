@@ -1,3 +1,17 @@
+.map-container {
+  overflow: hidden;
+  xxxpadding-bottom: 56.25%;
+  padding-bottom: 300px;
+  position: relative;
+  height: 0; }
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
 /*!
  * Bootstrap v5.0.0-alpha3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -7348,3 +7362,91 @@ textarea.form-control-lg {
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
+
+#social-media-footer .context-dark,
+#social-media-footer .bg-gray-dark,
+#social-media-footer .bg-primary {
+  color: rgba(255, 255, 255, 0.8); }
+
+#social-media-footer .footer-classic a,
+#social-media-footer .footer-classic a:focus,
+#social-media-footer .footer-classic a:active {
+  color: #ffffff; }
+
+#social-media-footer .nav-list li {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+#social-media-footer .nav-list li a:hover:before {
+  margin-left: 0;
+  opacity: 1;
+  visibility: visible; }
+
+#social-media-footer ul,
+#social-media-footer ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+#social-media-footer .social-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 23px;
+  font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5); }
+
+#social-media-footer .social-container .col {
+  border: 1px solid rgba(255, 255, 255, 0.1); }
+
+#social-media-footer .nav-list li a:before {
+  content: "\f14f";
+  font: 400 21px/1 "Material Design Icons";
+  color: #4d6de6;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: -28px;
+  margin-right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.22s ease; }
+
+@keyframes animatedBackground {
+  from {
+    xtransform: translate(0);
+    background-position: -15px -15px; }
+  to {
+    xtransform: translate(10%);
+    background-position: 0 0; } }
+
+#img1-area {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/img-1.jpg);
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  animation: animatedBackground 5s linear infinite alternate; }
+
+#img2-area {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/img-2.jpg);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: animatedBackground 5s linear infinite alternate; }
+
+#img3-area {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/img-3.jpg);
+  background-position: center;
+  background-repeat: repeat-x;
+  animation: animatedBackground 5s linear infinite alternate; }
+
+.s8-img-anim {
+  overflow: hidden;
+  width: 100%;
+  height: 980px;
+  border: 3px solid red; }
