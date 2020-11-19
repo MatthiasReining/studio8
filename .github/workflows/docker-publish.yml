@@ -18,5 +18,5 @@ jobs:
         path: app/
         remote_path: /data/www/studio8/
         remote_host: studio8-kosmetik.de
-        remote_user: john
+        remote_user: studio8
         remote_key: ${{ secrets.GIT_STUDIO8_KOSMETIK }}
