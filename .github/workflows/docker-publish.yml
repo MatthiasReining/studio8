@@ -19,4 +19,4 @@ jobs:
         remote_path: /data/www/studio8/
         remote_host: studio8-kosmetik.de
         remote_user: john
-        remote_key: ${{ secrets.DEPLOY_KEY }}
+        remote_key: ${{ secrets.GIT_STUDIO8_KOSMETIK }}
