@@ -1,3 +1,46 @@
+.invert-container {
+  background-color: #973276; }
+
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bgimg-1 {
+  background-image: url("../img/caro1.jpg");
+  min-height: 100%; }
+
+.bgimg-2 {
+  background-image: url("../img/caro2.jpg");
+  min-height: 400px; }
+
+.bgimg-3 {
+  background-image: url("../img/caro3.jpg");
+  min-height: 400px; }
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll; } }
+
 .map-container {
   overflow: hidden;
   xxxpadding-bottom: 56.25%;
@@ -5497,7 +5540,7 @@ textarea.form-control-lg {
 .text-dark {
   color: #212529 !important; }
 
-.text-white {
+.text-white, .invert-container {
   color: #fff !important; }
 
 .text-body {
