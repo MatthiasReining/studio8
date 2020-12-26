@@ -4,9 +4,19 @@ $body-color: $main-color;
 //$body-bg: rgb(255, 255, 255);
 $font-size-base: 1.2rem;
 
-.invert-container {
-  background-color: $main-color;
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/variables";
+
+.bg-pink {
+  background-color: $pink;
   @extend .text-white;
+
+  a {
+    color: white;
+  }
+  a:visited {
+    text-decoration: none;
+  }
 }
 
 .parallax {
@@ -71,8 +81,6 @@ $font-size-base: 1.2rem;
   width: 100%;
   position: absolute;
 }
-
-@import "../node_modules/bootstrap/scss/bootstrap";
 
 #social-media-footer {
   .context-dark,
