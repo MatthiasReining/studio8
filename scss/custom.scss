@@ -1,4 +1,4 @@
-$main-color: rgb(151, 50, 118);
+$main-color: #b07592;
 
 $body-color: $main-color;
 //$body-bg: rgb(255, 255, 255);
@@ -7,8 +7,14 @@ $font-size-base: 1.2rem;
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap/scss/variables";
 
+body {
+  background: black
+    url(https://www.bestaendig-autowelt.de/fileadmin/site2018/img/bg.jpg)
+    no-repeat top center;
+}
+
 .bg-pink {
-  background-color: $pink;
+  background-color: $main-color;
   @extend .text-white;
 
   a {

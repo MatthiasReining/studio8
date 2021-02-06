@@ -16,7 +16,8 @@ jobs:
       with:
         switches: -avzr --delete
         path: app/
-        remote_path: /data/www/studio8/
-        remote_host: studio8-kosmetik.de
+        remote_path: /var/www/studio8-kosmetik.de/
+        remote_host: 116.203.246.171
+        # remote_host: studio8-kosmetik.de
         remote_user: studio8
         remote_key: ${{ secrets.GIT_STUDIO8_KOSMETIK }}
