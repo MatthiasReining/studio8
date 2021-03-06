@@ -7394,7 +7394,7 @@ textarea.form-control-lg {
     display: none !important; } }
 
 body {
-  background: black url(../img/bg-pattern.jpg) repeat-y top center; }
+  background: black; }
 
 .bg-pink {
   background-color: #b07592; }
@@ -7456,6 +7456,10 @@ body {
   height: 100%;
   width: 100%;
   position: absolute; }
+
+#services {
+  background: black url(../img/bg-pattern.jpg) repeat-y top center;
+  color: #66153d; }
 
 #kontakt {
   color: black;
@@ -7709,3 +7713,5 @@ header a.control {
 
 .navbar {
   font-size: 1.5rem; }
+  .navbar .nav-item {
+    margin-right: 0.6rem; }
