@@ -7572,6 +7572,9 @@ header.start-page-container {
   perspective: 100px;
   color: white; }
 
+.studio-claim {
+  z-index: 9999; }
+
 .start-page {
   height: 100%;
   height: -moz-available;
@@ -7606,27 +7609,21 @@ header.start-page-container {
   width: 100%; }
 
 .bg-img-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(../img/img-1.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(../img/bg-splash.jpg); }
 
 .bg-img-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(../img/img-2.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(../img/nail-design.jpg); }
 
 .bg-img-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(../img/img-3.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(../img/bg-wimpernlifting.jpg); }
+
+.bg-img-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(../img/bg-sugaring.jpg); }
 
 .start-page section {
   display: table-cell;
   text-align: center;
   vertical-align: middle; }
-
-.start-page h1, .start-page .h1,
-.start-page h2,
-.start-page .h2 {
-  color: white;
-  font-weight: 800;
-  border: 0;
-  margin: 0;
-  text-align: center; }
 
 /* Next & previous buttons */
 .prev,
