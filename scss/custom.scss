@@ -8,9 +8,9 @@ $font-size-base: 1.2rem;
 @import "../node_modules/bootstrap/scss/variables";
 
 body {
-  background: black
-    url(https://www.bestaendig-autowelt.de/fileadmin/site2018/img/bg.jpg)
-    no-repeat top center;
+  background: black url(../img/bg-pattern.jpg)
+    //url(..https://www.bestaendig-autowelt.de/fileadmin/site2018/img/bg.jpg)
+    repeat-y top center;
 }
 
 .bg-pink {
@@ -51,7 +51,7 @@ body {
 }
 .bgimg-1 {
   background-image: url("../img/caro1.jpg");
-  min-height: 100%;
+  min-height: 500px;
 }
 
 .bgimg-2 {
@@ -86,6 +86,15 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+#kontakt {
+  color: black;
+  background: black url(../img/bg-pattern.jpg) repeat-y top center;
+
+  a {
+    color: black;
+  }
 }
 
 #social-media-footer {
