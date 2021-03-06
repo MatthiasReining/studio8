@@ -4,9 +4,10 @@
 
 ```bash
 apt-get update -y
-apt-get install -y nginx git
+apt-get install -y nginx git snapd
 
 systemctl enable nginx && systemctl start nginx
+snap install core; snap refresh core
 
 ln -s /etc/nginx/sites-available/studio8-kosmetik.de /etc/nginx/sites-enabled/
 
@@ -35,6 +36,10 @@ Config Server
 Install Let's Encrypt
 
 ```bash
+snap install --classic certbot
+ln -s /snap/bin/certbot /usr/bin/certbot
+certbot --nginx
+
 /usr/local/bin/certbot-auto --nginx
 ```
 
