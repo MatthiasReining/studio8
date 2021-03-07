@@ -37,3 +37,23 @@ function showSlides(n) {
   img.classList.remove("hide");
   img.classList.add("show");
 }
+function initMap() {
+  const myLatLng = {
+    lat: 50,
+    lng: 10,
+  };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    mapId: "aa821d18db9991c4",
+    center: myLatLng,
+    fullscreenControl: true,
+    zoomControl: true,
+    mapTypeControl: false,
+    streetViewControl: false,
+  });
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Hello World!",
+  });
+}
