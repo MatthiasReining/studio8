@@ -63,6 +63,18 @@ body {
   min-height: 600px;
 }
 
+#preise table caption {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 300%;
+  font-weight: 800;
+}
+
+.caro-font {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 300%;
+  font-weight: 800;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1,
