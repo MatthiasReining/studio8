@@ -1,11 +1,12 @@
 name: deploy
 
-on:
-  push:
-    # Publish `main` as Docker `latest` image.
-    branches:
-      - main
-      - master
+on: [push]
+  
+#  push:
+#    # Publish `main` as Docker `latest` image.
+#    branches:
+#      - main
+#      - master
 
 jobs:
   deploy:
