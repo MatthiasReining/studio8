@@ -1,5 +1,7 @@
-$main-color: #b07592;
+$XXXmain-color: #b07592;
+$main-color: #ffffff;
 $secondary-color: #66153d;
+$background-color: #b07592;
 
 $body-color: $main-color;
 //$body-bg: rgb(255, 255, 255);
@@ -9,13 +11,26 @@ $font-size-base: 1.2rem;
 @import "../node_modules/bootstrap/scss/variables";
 
 body {
-  background: black;
+  xxxbackground: black;
+  background: $background-color;
 }
 
 .bg-pink {
   background-color: $main-color;
   @extend .text-white;
 
+  a {
+    color: white;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+}
+
+.bg-sitemap {
+  xxxbackground-color: rgb(110, 8, 71);
+  background-color: #383434;
+  @extend .text-white;
   a {
     color: white;
   }
@@ -49,7 +64,7 @@ body {
   background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("../img/caro1.jpg");
+  background-image: url("../img/bg-img1.jpg");
   min-height: 500px;
 }
 
@@ -100,17 +115,30 @@ body {
 }
 
 #services {
-  background: black url(../img/bg-pattern.jpg) repeat-y top center;
+  xxxbackground: black url(../img/bg-pattern.jpg) repeat-y top center;
   color: $secondary-color;
+}
+
+#preise {
+  background-color: rgb(62, 41, 51);
+  caption {
+    xcolor: rgb(62, 41, 51);
+    color: white;
+  }
 }
 
 #kontakt {
   color: black;
-  background: black url(../img/bg-pattern.jpg) repeat-y top center;
+  xxxbackground: black url(../img/bg-pattern.jpg) repeat-y top center;
 
   a {
-    color: black;
+    xxxcolor: black;
+    color: white;
   }
+}
+
+#news {
+  background-color: #000;
 }
 
 #social-media-footer {
