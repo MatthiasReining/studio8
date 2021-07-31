@@ -7511,6 +7511,10 @@ body {
 #footer {
   background-color: #3e2933;
   color: white; }
+  #footer #impresumModal {
+    color: #3e2933; }
+  #footer .btn-link {
+    margin-left: -10px; }
 
 #social-media-footer .context-dark,
 #social-media-footer .bg-gray-dark,

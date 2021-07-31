@@ -1,59 +1,52 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/custom.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/custom.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
 
-    <title>Studio 8</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiPkU5-J2ArpXsGFvCrnV3z0onKsYKXFg&map_ids=aa821d18db9991c4&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
+  <title>Studio 8</title>
 
-    <script src="index.js"></script>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiPkU5-J2ArpXsGFvCrnV3z0onKsYKXFg&map_ids=aa821d18db9991c4&callback=initMap&libraries=&v=weekly"
+    defer></script>
 
-    <style type="text/css">
-      /* Always set the map height explicitly to define the size of the div
+  <script src="index.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <style type="text/css">
+    /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
-        height: 400px;
-      }
-    </style>
-  </head>
-  <body>
-    <header class="start-page-container">
-      <div class="position-absolute killme-w-50 m-5 text-left studio-claim">
-        <h1 class="display-1">Studio 8</h1>
-        <p class="display-5">- Kosmetik -</p>
-        <p class="display-5" style="font-size: 100%; margin-top: -0.7rem">
-          (Frau und Mann)
-        </p>
-      </div>
+    #map {
+      height: 400px;
+    }
+  </style>
+</head>
 
-      <div class="start-page s1">
-        <div class="bg-img bg-img-1"></div>
-      </div>
-<!--
+<body>
+  <header class="start-page-container">
+    <div class="position-absolute killme-w-50 m-5 text-left studio-claim">
+      <h1 class="display-1">Studio 8</h1>
+      <p class="display-5">- Kosmetik -</p>
+      <p class="display-5" style="font-size: 100%; margin-top: -0.7rem">
+        (Frau und Mann)
+      </p>
+    </div>
+
+    <div class="start-page s1">
+      <div class="bg-img bg-img-1"></div>
+    </div>
+    <!--
       <div class="start-page s2">
         <div class="bg-img bg-img-2"></div>
         <div class="position-absolute bottom-0 m-5 w-100">
@@ -68,7 +61,7 @@
         </div>
       </div>
 -->
-      <!--
+    <!--
       <div class="start-page s4">
         <div class="bg-img bg-img-4"></div>
         <div class="position-absolute bottom-0 m-5 w-100">
@@ -76,427 +69,162 @@
         </div>
       </div>
       -->
-<!--
+    <!--
       <a class="control prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="control next" onclick="plusSlides(1)">&#10095;</a>
       -->
-    </header>
+  </header>
 
-    <!-- navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand mr-5" href="#">Studio 8</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#preise">Preise</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#news">Aktuelles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Übers Studio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#kontakt">Kontakt</a>
-            </li>
-          </ul>
-        </div>
+  <!-- navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand mr-5" href="#">Studio 8</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#preise">Preise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">Aktuelles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Übers Studio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontakt">Kontakt</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- services -->
-    <section id="services" class="pt-5 pb-5">
-      <div class="container pt-4">
-        <h1>Services</h1>
+  <!-- services -->
+  <section id="services" class="pt-5 pb-5">
+    <div class="container pt-4">
+      <h1>Services</h1>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="img/service-nails2.jpg"
-                xsrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEtTxKp_Aqa-vmC4ZOVgs0Iou79E5U0lb6Q&usqp=CAU"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Nageldesign</h5>
-                <p class="card-text">
-                  Maniküre und Pediküre natürlich mit individuellen Nageldesign.
-                  <!--<br /><br />
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/service-nails2.jpg"
+              xsrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEtTxKp_Aqa-vmC4ZOVgs0Iou79E5U0lb6Q&usqp=CAU"
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Nageldesign</h5>
+              <p class="card-text">
+                Maniküre und Pediküre natürlich mit individuellen Nageldesign.
+                <!--<br /><br />
                   Ich biete euch nicht nur die heißesten Lacke an, sondern auch
                   das entsprechende Know-How für ein perfektes Aussehen. Das
                   Portfolio reicht von Maniküre, Naturnagelverstärkung und
                   -auffüllung bis zur Pediküre, Lackieren und Peeling.
                   -->
-                </p>
-                <!-- Button trigger modal -->
-                <p class="text-right">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#serviceNailsDetails"
-                  >
-                    ...mehr
-                  </button>
-                </p>
-              </div>
-
-              <!-- Modal -->
-              <div class="modal fade" id="serviceNailsDetails" tabindex="-1">
-                <div class="modal-dialog modal-xl xmodal-fullscreen">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Nageldesign</h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <h2>Pflegehinweise</h2>
-                      <h3>NAILS</h3>
-                      <p>
-                        Bitte beachte folgende Empfehlungen. Diese haben sich in
-                        der Praxis bewährt und sind die Basis für schöne Hände
-                        und Nägel.
-                      </p>
-                      <ul>
-                        <li>
-                          Bitte denke daran, dass die Nägel für dich neu sind.
-                          Es werden ca. zwei bis drei Tage nötig sein, bis du
-                          dich an die neue Länge gewöhnt hast.
-                        </li>
-
-                        <li>
-                          Setze die Nägel niemals als Werkzeug ein, denn sie
-                          können brechen, im schlimmsten Fall auch der
-                          Naturnagel.
-                        </li>
-
-                        <li>
-                          Je nach Wachstum und Beanspruchung deiner Nägel muss
-                          du diese nach 3 - 4 Wochen auffüllen lassen.
-                        </li>
-
-                        <li>
-                          Trage deine Nägel nicht zu lang, wähle eine Länge, die
-                          zu deinem Lebensstil passt.
-                        </li>
-
-                        <li>
-                          Knipse oder schneide deine Fingernägel niemals selbst,
-                          das Material würde brechen. Feile deine Nägel mit
-                          einer Feile, die für Kunstnägel geeignet ist. Diese
-                          kannst du auch direkt bei mir erwerben.
-                        </li>
-
-                        <li>
-                          Durch das Auftragen von Klarlack schützt du deine
-                          Nägel vor Verfärbungen, z.B. durch Nikotin oder
-                          Solarium.
-                        </li>
-
-                        <li>
-                          Trage Handschuhe bei Haus-, Putz- und Gartenarbeiten,
-                          um deine Nägel nicht durch scharfe Putzmittel zu
-                          gefährden oder Verfärbungen zu riskieren.
-                        </li>
-
-                        <li>
-                          Verwöhne deine Nägel täglich mit einem Tropfen
-                          Nagelöl, es pflegt die Nagelhaut und hält den Nagel
-                          und die Modellage elastisch. Verwende zur Handpflege
-                          ein hochwertiges Produkt.
-                        </li>
-
-                        <li>
-                          Wenn deine Acrylnägel versiegelt wurden, kannst du sie
-                          zwar mit ganz normalem Nagellack lackieren, solltest
-                          aber bei der Entfernung des Lacks darauf achten, dass
-                          dieser acentonfrei ist.
-                        </li>
-
-                        <li>
-                          Entferne den Kunstnagel niemals gewaltsam, sonst reißt
-                          die obere Schicht deines Naturnagels aufgrund der
-                          festen Verbindung mit ab.
-                        </li>
-
-                        <li>
-                          Bitte creme die Hände am Tag der Modellage nicht ein
-                          und verwende auch kein Nagelöl.
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Zurück
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/service-wimpern.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Wimpern</h5>
-                <p class="card-text">
-                  Lash & Brow Lifting.<br />
-                  Lash Lifting, das Geheimnis für den perfekten Augenaufschlag.
-                  Eine extra Portion Schwung ohne Fake-Lashes.<br />
-                  Brow Lifting, der neueste Trend der Jahres! Die perfekte
-                  Dauerwelle für die Augenbrauen.
-                </p>
-                <!-- Button trigger modal -->
-                <p class="text-right">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#serviceWimpernDetails"
-                  >
-                    ...mehr
-                  </button>
-                </p>
-              </div>
-
-              <!-- start -->
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="serviceWimpernDetails"
-                tabindex="-1"
-                aria-labelledby="serviceWimpernDetails"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-xl xmodal-fullscreen">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Wimpern</h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-
-                    <div class="modal-body">
-                      Was ist ein Wimpernlifting?<br />
-                      <p>
-                        Ein Wimpernlifting ist eine Art Dauerwelle für die
-                        Wimpern. Die Wimpernhärchen werden dabei mit
-                        verschiedenen Chemikalien behandelt, um sie dauerhaft in
-                        eine Form zu bringen. Der Effekt ist ähnlich wie nach
-                        dem Benutzen einer Wimpernzange: Die Wimpern werden nach
-                        oben gebogen und bekommen so den perfekten Schwung –
-                        bloß, dass der beim Lifting wesentlich länger anhält.
-                      </p>
-                      <p>
-                        Wäre es nicht schön, direkt nach dem Aufwachen schon
-                        nahezu perfekt gestylte Wimpern und einen tollen
-                        Augenaufschlag zu haben? Ein Wimpernlifting macht es
-                        möglich und dabei sieht das Ergebnis der Behandlung
-                        besonders natürlich aus. Im Gegensatz zu künstlichen
-                        Wimpern oder den sogenannten Wimpernextensions werden
-                        beim Lifting die eigenen Haare verwendet.
-                      </p>
-                      <p>
-                        Ein wunderschöner Schwung und vollere Wimpern – und das
-                        mit den eigenen Naturwimpern! Lashlifting ist die
-                        perfekte Alternative zur dauerhaften Wimpernverlängerung
-                        Das Erzeugen der Welle erfolgt dann in zwei Phasen: Im
-                        ersten Schritt wird mit Hilfe einer Lotion die
-                        Schwefelbrücke in den Wimpern gebrochen. So löst sich
-                        die natürliche Struktur auf und kann verändert werden.
-                        Nach 8 bis 12 Minuten Einwirkzeit wird die Lotion
-                        abgetragen und die Wimpern mit einer zweiten Lösung
-                        bestrichen. Diese festigt die neue Wimpern-Form. Auch
-                        hier liegt die Einwirkzeit wieder bei 8 bis 12 Minuten.
-                        Im Anschluss werden die Wimpern, wenn gewünscht, auch
-                        gefärbt, die Liftingpads vorsichtig abgezogen und
-                        fertig. Das Lifting ist sofort sichtbar.
-                      </p>
-                      <hr />
-                      <p>Vor dem Termin <br /></p>
-                      <ul>
-                        <li>
-                          Bei einem Lashlifting verzichte bitte 24 Stunden vor
-                          der Behandlung auf den Gebrauch von
-                          Wimpernwachstumsserum und ölhaltigen Kosmetikprodukte
-                        </li>
-                        <li>
-                          Komm bitte ungeschminkt zum Termin. Also ohne Mascara,
-                          Eyliner, Lidschatten
-                        </li>
-                        <li>
-                          Bei stark verunreinigten Wimpern muss man eine
-                          komplette Reinigung der Augen / Wimpern vornehmen
-                          Dieser Mehraufwand wird extra berechnet
-                        </li>
-                        <li>
-                          Wenn du Kontaktlinsenträgerin*inn bist, bringe bitte
-                          einen Behälter für deine Linsen mit 😉
-                        </li>
-                        <li>
-                          Es ist nicht gestattet dritte Personen zum Termin
-                          mitzubringen
-                        </li>
-                      </ul>
-
-                      Nach dem Termin <br />
-                      <ul>
-                        <li>
-                          Um einen langanhaltenden Effekt nach dem Brow &
-                          Lashlifting zu erreichen, ist es NOTWENDIG ein
-                          Aftercare Serum zu benutzen
-                        </li>
-                        <li>
-                          Damit die Wimpern und brauen weich geschmeidig
-                          bleiben, kann die Behandlung problemlos nach 6-8
-                          Wochen wiederholt werden
-                        </li>
-                      </ul>
-
-                      Do´s & Dont´s<br />
-
-                      24 Stunden nach der Behandlung <br />
-                      <ul>
-                        <li>
-                          Dürfen deine Brauen und Wimpern nicht nass werden
-                        </li>
-                        <li>Solltest du dir nicht die Augen reiben</li>
-                        <li>Verzichte auf Augen.Make.up</li>
-                        <li>
-                          Vermeide das Schlafen auf der Seite oder auf deinem
-                          Gesicht 48 Stunden nach der Behandlung <br />
-                        </li>
-                        <li>
-                          Halte dich von Dampf oder heißem Wasser fern, lege
-                          bitte keine Saunagänge oder den Besuch im SPa lieber
-                          auf einen anderen Tag
-                        </li>
-                      </ul>
-                      <p>
-                        Verwende generell keine scharfen Reiniger oder
-                        Öl-basierte Make-up Entferner
-                      </p>
-                    </div>
-
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Zurück
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- end -->
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/service-sugaring.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Sugaring</h5>
-                <p class="card-text">
-                  Sanfte Depilation mit Zuckerpaste. Schonende Haarentfernung.
-                  Eine Methode, die effektiv auf natürliche Basis, schmerzfreier
-                  und langanhaltender als andere Techniken zu besten Ergebnissen
-                  kommt.
-                </p>
-                <!-- Button trigger modal -->
-                <p class="text-right">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#serviceSugaringDetails"
-                  >
-                    ...mehr
-                  </button>
-                </p>
-              </div>
+              </p>
+              <!-- Button trigger modal -->
+              <p class="text-right">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#serviceNailsDetails">
+                  ...mehr
+                </button>
+              </p>
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="serviceSugaringDetails" tabindex="-1">
+            <div class="modal fade" id="serviceNailsDetails" tabindex="-1">
               <div class="modal-dialog modal-xl xmodal-fullscreen">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title">Sugaring</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
+                    <h5 class="modal-title">Nageldesign</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    Glatte, samtweiche Haut ohne ein einziges Härchen liegt im
-                    Trend. Profitieren auch Sie von der bewährten orientalischen
-                    Methode der Haarentfernung, dem Sugaring. Zuckern ist das
-                    Beauty-Geheimnis nicht nur für zauberhaft schöne
-                    Frauenbeine, sondern auch für einen makellos haarfreien
-                    Männerkörper. Andere Kulturen schätzten schon lange den
-                    unkomplizierten Einsatz der handwarmen Zuckerpaste. Diese
-                    ist bis heute ein 100% natürliches Produkt geblieben, mit
-                    dem sich alle Stellen Ihres Körpers einfach und gründlich
-                    enthaaren lassen. Ihr Vorteil beim Sugaring: Die Behandlung
-                    ist weniger schmerzhaft als beispielsweise bei einem
-                    Epilierer und hält dabei sehr lange vor. Gleichzeitig
-                    irritiert sich die Haut weniger und eignet sich auch für
-                    sensible Körperstellen wie Achsel- oder Intimbereich. Werden
-                    die Haare regelmäßig mit der Zuckerpaste entfernt, wachsen
-                    sie erst immer feiner und weniger. Sugaring ist eine Kunst,
-                    die gelernt sein will. Als Kosmetikerin verfüge ich über
-                    reichhaltige Erfahrung. Natürlich können Sie sich vor Ihrer
-                    ersten Behandlung umfassend beraten lassen. Sie werden
-                    sehen, Sugaring ist hygienisch, langanhaltend und für jeden
-                    Hauttyp geeignet, auch für sehr empfindliche Haut. Ein
-                    weiterer Vorteil für Sie: Diese Methode der Enthaarung kommt
-                    völlig ohne Chemie aus
+                    <h2>Pflegehinweise</h2>
+                    <h3>NAILS</h3>
+                    <p>
+                      Bitte beachte folgende Empfehlungen. Diese haben sich in
+                      der Praxis bewährt und sind die Basis für schöne Hände
+                      und Nägel.
+                    </p>
+                    <ul>
+                      <li>
+                        Bitte denke daran, dass die Nägel für dich neu sind.
+                        Es werden ca. zwei bis drei Tage nötig sein, bis du
+                        dich an die neue Länge gewöhnt hast.
+                      </li>
+
+                      <li>
+                        Setze die Nägel niemals als Werkzeug ein, denn sie
+                        können brechen, im schlimmsten Fall auch der
+                        Naturnagel.
+                      </li>
+
+                      <li>
+                        Je nach Wachstum und Beanspruchung deiner Nägel muss
+                        du diese nach 3 - 4 Wochen auffüllen lassen.
+                      </li>
+
+                      <li>
+                        Trage deine Nägel nicht zu lang, wähle eine Länge, die
+                        zu deinem Lebensstil passt.
+                      </li>
+
+                      <li>
+                        Knipse oder schneide deine Fingernägel niemals selbst,
+                        das Material würde brechen. Feile deine Nägel mit
+                        einer Feile, die für Kunstnägel geeignet ist. Diese
+                        kannst du auch direkt bei mir erwerben.
+                      </li>
+
+                      <li>
+                        Durch das Auftragen von Klarlack schützt du deine
+                        Nägel vor Verfärbungen, z.B. durch Nikotin oder
+                        Solarium.
+                      </li>
+
+                      <li>
+                        Trage Handschuhe bei Haus-, Putz- und Gartenarbeiten,
+                        um deine Nägel nicht durch scharfe Putzmittel zu
+                        gefährden oder Verfärbungen zu riskieren.
+                      </li>
+
+                      <li>
+                        Verwöhne deine Nägel täglich mit einem Tropfen
+                        Nagelöl, es pflegt die Nagelhaut und hält den Nagel
+                        und die Modellage elastisch. Verwende zur Handpflege
+                        ein hochwertiges Produkt.
+                      </li>
+
+                      <li>
+                        Wenn deine Acrylnägel versiegelt wurden, kannst du sie
+                        zwar mit ganz normalem Nagellack lackieren, solltest
+                        aber bei der Entfernung des Lacks darauf achten, dass
+                        dieser acentonfrei ist.
+                      </li>
+
+                      <li>
+                        Entferne den Kunstnagel niemals gewaltsam, sonst reißt
+                        die obere Schicht deines Naturnagels aufgrund der
+                        festen Verbindung mit ab.
+                      </li>
+
+                      <li>
+                        Bitte creme die Hände am Tag der Modellage nicht ein
+                        und verwende auch kein Nagelöl.
+                      </li>
+                    </ul>
                   </div>
                   <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                       Zurück
                     </button>
                   </div>
@@ -504,24 +232,236 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/service-wellness.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Wellness</h5>
-                <p class="card-text">Keep Calm and Relax</p>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/service-wimpern.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Wimpern</h5>
+              <p class="card-text">
+                Lash & Brow Lifting.<br />
+                Lash Lifting, das Geheimnis für den perfekten Augenaufschlag.
+                Eine extra Portion Schwung ohne Fake-Lashes.<br />
+                Brow Lifting, der neueste Trend der Jahres! Die perfekte
+                Dauerwelle für die Augenbrauen.
+              </p>
+              <!-- Button trigger modal -->
+              <p class="text-right">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#serviceWimpernDetails">
+                  ...mehr
+                </button>
+              </p>
+            </div>
+
+            <!-- start -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="serviceWimpernDetails" tabindex="-1" aria-labelledby="serviceWimpernDetails"
+              aria-hidden="true">
+              <div class="modal-dialog modal-xl xmodal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Wimpern</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body">
+                    Was ist ein Wimpernlifting?<br />
+                    <p>
+                      Ein Wimpernlifting ist eine Art Dauerwelle für die
+                      Wimpern. Die Wimpernhärchen werden dabei mit
+                      verschiedenen Chemikalien behandelt, um sie dauerhaft in
+                      eine Form zu bringen. Der Effekt ist ähnlich wie nach
+                      dem Benutzen einer Wimpernzange: Die Wimpern werden nach
+                      oben gebogen und bekommen so den perfekten Schwung –
+                      bloß, dass der beim Lifting wesentlich länger anhält.
+                    </p>
+                    <p>
+                      Wäre es nicht schön, direkt nach dem Aufwachen schon
+                      nahezu perfekt gestylte Wimpern und einen tollen
+                      Augenaufschlag zu haben? Ein Wimpernlifting macht es
+                      möglich und dabei sieht das Ergebnis der Behandlung
+                      besonders natürlich aus. Im Gegensatz zu künstlichen
+                      Wimpern oder den sogenannten Wimpernextensions werden
+                      beim Lifting die eigenen Haare verwendet.
+                    </p>
+                    <p>
+                      Ein wunderschöner Schwung und vollere Wimpern – und das
+                      mit den eigenen Naturwimpern! Lashlifting ist die
+                      perfekte Alternative zur dauerhaften Wimpernverlängerung
+                      Das Erzeugen der Welle erfolgt dann in zwei Phasen: Im
+                      ersten Schritt wird mit Hilfe einer Lotion die
+                      Schwefelbrücke in den Wimpern gebrochen. So löst sich
+                      die natürliche Struktur auf und kann verändert werden.
+                      Nach 8 bis 12 Minuten Einwirkzeit wird die Lotion
+                      abgetragen und die Wimpern mit einer zweiten Lösung
+                      bestrichen. Diese festigt die neue Wimpern-Form. Auch
+                      hier liegt die Einwirkzeit wieder bei 8 bis 12 Minuten.
+                      Im Anschluss werden die Wimpern, wenn gewünscht, auch
+                      gefärbt, die Liftingpads vorsichtig abgezogen und
+                      fertig. Das Lifting ist sofort sichtbar.
+                    </p>
+                    <hr />
+                    <p>Vor dem Termin <br /></p>
+                    <ul>
+                      <li>
+                        Bei einem Lashlifting verzichte bitte 24 Stunden vor
+                        der Behandlung auf den Gebrauch von
+                        Wimpernwachstumsserum und ölhaltigen Kosmetikprodukte
+                      </li>
+                      <li>
+                        Komm bitte ungeschminkt zum Termin. Also ohne Mascara,
+                        Eyliner, Lidschatten
+                      </li>
+                      <li>
+                        Bei stark verunreinigten Wimpern muss man eine
+                        komplette Reinigung der Augen / Wimpern vornehmen
+                        Dieser Mehraufwand wird extra berechnet
+                      </li>
+                      <li>
+                        Wenn du Kontaktlinsenträgerin*inn bist, bringe bitte
+                        einen Behälter für deine Linsen mit 😉
+                      </li>
+                      <li>
+                        Es ist nicht gestattet dritte Personen zum Termin
+                        mitzubringen
+                      </li>
+                    </ul>
+
+                    Nach dem Termin <br />
+                    <ul>
+                      <li>
+                        Um einen langanhaltenden Effekt nach dem Brow &
+                        Lashlifting zu erreichen, ist es NOTWENDIG ein
+                        Aftercare Serum zu benutzen
+                      </li>
+                      <li>
+                        Damit die Wimpern und brauen weich geschmeidig
+                        bleiben, kann die Behandlung problemlos nach 6-8
+                        Wochen wiederholt werden
+                      </li>
+                    </ul>
+
+                    Do´s & Dont´s<br />
+
+                    24 Stunden nach der Behandlung <br />
+                    <ul>
+                      <li>
+                        Dürfen deine Brauen und Wimpern nicht nass werden
+                      </li>
+                      <li>Solltest du dir nicht die Augen reiben</li>
+                      <li>Verzichte auf Augen.Make.up</li>
+                      <li>
+                        Vermeide das Schlafen auf der Seite oder auf deinem
+                        Gesicht 48 Stunden nach der Behandlung <br />
+                      </li>
+                      <li>
+                        Halte dich von Dampf oder heißem Wasser fern, lege
+                        bitte keine Saunagänge oder den Besuch im SPa lieber
+                        auf einen anderen Tag
+                      </li>
+                    </ul>
+                    <p>
+                      Verwende generell keine scharfen Reiniger oder
+                      Öl-basierte Make-up Entferner
+                    </p>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Zurück
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/service-sugaring.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Sugaring</h5>
+              <p class="card-text">
+                Sanfte Depilation mit Zuckerpaste. Schonende Haarentfernung.
+                Eine Methode, die effektiv auf natürliche Basis, schmerzfreier
+                und langanhaltender als andere Techniken zu besten Ergebnissen
+                kommt.
+              </p>
+              <!-- Button trigger modal -->
+              <p class="text-right">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#serviceSugaringDetails">
+                  ...mehr
+                </button>
+              </p>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="serviceSugaringDetails" tabindex="-1">
+            <div class="modal-dialog modal-xl xmodal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Sugaring</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Glatte, samtweiche Haut ohne ein einziges Härchen liegt im
+                  Trend. Profitieren auch Sie von der bewährten orientalischen
+                  Methode der Haarentfernung, dem Sugaring. Zuckern ist das
+                  Beauty-Geheimnis nicht nur für zauberhaft schöne
+                  Frauenbeine, sondern auch für einen makellos haarfreien
+                  Männerkörper. Andere Kulturen schätzten schon lange den
+                  unkomplizierten Einsatz der handwarmen Zuckerpaste. Diese
+                  ist bis heute ein 100% natürliches Produkt geblieben, mit
+                  dem sich alle Stellen Ihres Körpers einfach und gründlich
+                  enthaaren lassen. Ihr Vorteil beim Sugaring: Die Behandlung
+                  ist weniger schmerzhaft als beispielsweise bei einem
+                  Epilierer und hält dabei sehr lange vor. Gleichzeitig
+                  irritiert sich die Haut weniger und eignet sich auch für
+                  sensible Körperstellen wie Achsel- oder Intimbereich. Werden
+                  die Haare regelmäßig mit der Zuckerpaste entfernt, wachsen
+                  sie erst immer feiner und weniger. Sugaring ist eine Kunst,
+                  die gelernt sein will. Als Kosmetikerin verfüge ich über
+                  reichhaltige Erfahrung. Natürlich können Sie sich vor Ihrer
+                  ersten Behandlung umfassend beraten lassen. Sie werden
+                  sehen, Sugaring ist hygienisch, langanhaltend und für jeden
+                  Hauttyp geeignet, auch für sehr empfindliche Haut. Ein
+                  weiterer Vorteil für Sie: Diese Methode der Enthaarung kommt
+                  völlig ohne Chemie aus
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Zurück
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <hr class="mt-3 mb-3" />
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/service-wellness.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Wellness</h5>
+              <p class="card-text">Keep Calm and Relax</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+      <hr class="mt-3 mb-3" />
 
-          <!--
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+
+        <!--
           <div class="col">
             <div class="card h-100">
               <h2 class="card-title text-center">
@@ -539,198 +479,198 @@
           </div>
           -->
 
-          <div class="col">
-            <div class="card h-100">
-              <h2 class="card-title text-center">
-                <span class="material-icons" style="font-size: 500%">
-                  emoji_events
-                </span>
-              </h2>
-              <div class="card-body" style="margin-top: -1rem">
-                <h5 class="card-title text-center">QUALITÄTSPRODUKTE</h5>
-                <p class="card-text">
-                  Wir benutzen bei uns ausschließlich Markenprodukte.
-                </p>
-              </div>
+        <div class="col">
+          <div class="card h-100">
+            <h2 class="card-title text-center">
+              <span class="material-icons" style="font-size: 500%">
+                emoji_events
+              </span>
+            </h2>
+            <div class="card-body" style="margin-top: -1rem">
+              <h5 class="card-title text-center">QUALITÄTSPRODUKTE</h5>
+              <p class="card-text">
+                Wir benutzen bei uns ausschließlich Markenprodukte.
+              </p>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <h2 class="card-title text-center">
-                <span class="material-icons" style="font-size: 500%">
-                  card_giftcard
-                </span>
-              </h2>
-              <div class="card-body" style="margin-top: -1rem">
-                <h5 class="card-title text-center">TREUEKARTE</h5>
-                <p class="card-text">
-                  Kommen Sie 10 mal und genießen sie die 11. Behandlung gratis.
-                </p>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <h2 class="card-title text-center">
+              <span class="material-icons" style="font-size: 500%">
+                card_giftcard
+              </span>
+            </h2>
+            <div class="card-body" style="margin-top: -1rem">
+              <h5 class="card-title text-center">TREUEKARTE</h5>
+              <p class="card-text">
+                Kommen Sie 10 mal und genießen sie die 11. Behandlung gratis.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--
+  <!--
     <div class="bgimg-2"></div>
     -->
 
-    <!-- preise -->
-    <section id="preise" class="pt-5">
-      <div class="container pt-4">
-        <h1>Preise</h1>
+  <!-- preise -->
+  <section id="preise" class="pt-5">
+    <div class="container pt-4">
+      <h1>Preise</h1>
 
-        <div class="row g-5">
-          <div class="col-sm-6">
-            <table class="table caption-top">
-              <caption>
-                Nägel
-              </caption>
-              <tbody>
-                <tr>
-                  <td>Neumodellage mit Schablone</td>
-                  <td class="text-right text-nowrap">48 EUR</td>
-                </tr>
-                <tr>
-                  <td>Hochzeitsnägel</td>
-                  <td class="text-right text-nowrap">65 EUR</td>
-                </tr>
-                <tr>
-                  <td>Auffüllen (nur Gel)</td>
-                  <td class="text-right text-nowrap">35 EUR</td>
-                </tr>
-                <tr>
-                  <td>Reparatur pro Nagel / Extratermin</td>
-                  <td class="text-right text-nowrap">5 EUR</td>
-                </tr>
-                <tr>
-                  <td>Überlänge Aufpreis</td>
-                  <td class="text-right text-nowrap">5 EUR</td>
-                </tr>
-                <tr>
-                  <td>Entfernen der Modellage</td>
-                  <td class="text-right text-nowrap">20 EUR</td>
-                </tr>
-                <tr>
-                  <td>Maniküre</td>
-                  <td class="text-right text-nowrap">20 EUR</td>
-                </tr>
-                <tr>
-                  <td>Maniküre mit Lack</td>
-                  <td class="text-right text-nowrap">25 EUR</td>
-                </tr>
-                <tr>
-                  <td>Nagellack ablackieren</td>
-                  <td class="text-right text-nowrap">5 EUR</td>
-                </tr>
-                <tr>
-                  <td>Füße lackieren</td>
-                  <td class="text-right text-nowrap">12 EUR</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      <div class="row g-5">
+        <div class="col-sm-6">
+          <table class="table caption-top">
+            <caption>
+              Nägel
+            </caption>
+            <tbody>
+              <tr>
+                <td>Neumodellage mit Schablone</td>
+                <td class="text-right text-nowrap">48 EUR</td>
+              </tr>
+              <tr>
+                <td>Hochzeitsnägel</td>
+                <td class="text-right text-nowrap">65 EUR</td>
+              </tr>
+              <tr>
+                <td>Auffüllen (nur Gel)</td>
+                <td class="text-right text-nowrap">35 EUR</td>
+              </tr>
+              <tr>
+                <td>Reparatur pro Nagel / Extratermin</td>
+                <td class="text-right text-nowrap">5 EUR</td>
+              </tr>
+              <tr>
+                <td>Überlänge Aufpreis</td>
+                <td class="text-right text-nowrap">5 EUR</td>
+              </tr>
+              <tr>
+                <td>Entfernen der Modellage</td>
+                <td class="text-right text-nowrap">20 EUR</td>
+              </tr>
+              <tr>
+                <td>Maniküre</td>
+                <td class="text-right text-nowrap">20 EUR</td>
+              </tr>
+              <tr>
+                <td>Maniküre mit Lack</td>
+                <td class="text-right text-nowrap">25 EUR</td>
+              </tr>
+              <tr>
+                <td>Nagellack ablackieren</td>
+                <td class="text-right text-nowrap">5 EUR</td>
+              </tr>
+              <tr>
+                <td>Füße lackieren</td>
+                <td class="text-right text-nowrap">12 EUR</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-          <div class="col-sm-6">
-            <table class="table caption-top">
-              <caption>
-                Wimpern
-              </caption>
-              <tbody>
-                <tr>
-                  <td>Lashlifting inkl. Färben</td>
-                  <td class="text-right text-nowrap">45 EUR</td>
-                </tr>
-                <tr>
-                  <td>Browlifting</td>
-                  <td class="text-right text-nowrap">35 EUR</td>
-                </tr>
-                <tr>
-                  <td>Wimpernlaminierung mit Browlifting</td>
-                  <td class="text-right text-nowrap">55 EUR</td>
-                </tr>
-                <tr>
-                  <td>Augenbrauenmodellage</td>
-                  <td class="text-right text-nowrap">14 EUR</td>
-                </tr>
-                <tr>
-                  <td>Augenbrauen färben</td>
-                  <td class="text-right text-nowrap">10 EUR</td>
-                </tr>
-                <tr>
-                  <td>Wimpern färben</td>
-                  <td class="text-right text-nowrap">10 EUR</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="col-sm-6">
+          <table class="table caption-top">
+            <caption>
+              Wimpern
+            </caption>
+            <tbody>
+              <tr>
+                <td>Lashlifting inkl. Färben</td>
+                <td class="text-right text-nowrap">45 EUR</td>
+              </tr>
+              <tr>
+                <td>Browlifting</td>
+                <td class="text-right text-nowrap">35 EUR</td>
+              </tr>
+              <tr>
+                <td>Wimpernlaminierung mit Browlifting</td>
+                <td class="text-right text-nowrap">55 EUR</td>
+              </tr>
+              <tr>
+                <td>Augenbrauenmodellage</td>
+                <td class="text-right text-nowrap">14 EUR</td>
+              </tr>
+              <tr>
+                <td>Augenbrauen färben</td>
+                <td class="text-right text-nowrap">10 EUR</td>
+              </tr>
+              <tr>
+                <td>Wimpern färben</td>
+                <td class="text-right text-nowrap">10 EUR</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-          <div class="col-sm-6">
-            <table class="table caption-top">
-              <caption>
-                Sugaring
-              </caption>
-              <tbody>
-                <tr>
-                  <td>U-Beine</td>
-                  <td class="text-right text-nowrap">ab 25 EUR</td>
-                </tr>
-                <tr>
-                  <td>Beine komplett</td>
-                  <td class="text-right text-nowrap">ab 40 EUR</td>
-                </tr>
-                <tr>
-                  <td>Unterarme</td>
-                  <td class="text-right text-nowrap">ab 20 EUR</td>
-                </tr>
-                <tr>
-                  <td>Bikinilinie</td>
-                  <td class="text-right text-nowrap">ab 15 EUR</td>
-                </tr>
-                <tr>
-                  <td>Achseln / pro Achsel</td>
-                  <td class="text-right text-nowrap">ab 13 EUR</td>
-                </tr>
-                <tr>
-                  <td>Gesicht</td>
-                  <td class="text-right text-nowrap">ab 8 EUR</td>
-                </tr>
-                <tr>
-                  <td>Schultern</td>
-                  <td class="text-right text-nowrap">ab 25 EUR</td>
-                </tr>
-                <tr>
-                  <td>Rücken</td>
-                  <td class="text-right text-nowrap">ab 55 EUR</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="col-sm-6">
+          <table class="table caption-top">
+            <caption>
+              Sugaring
+            </caption>
+            <tbody>
+              <tr>
+                <td>U-Beine</td>
+                <td class="text-right text-nowrap">ab 25 EUR</td>
+              </tr>
+              <tr>
+                <td>Beine komplett</td>
+                <td class="text-right text-nowrap">ab 40 EUR</td>
+              </tr>
+              <tr>
+                <td>Unterarme</td>
+                <td class="text-right text-nowrap">ab 20 EUR</td>
+              </tr>
+              <tr>
+                <td>Bikinilinie</td>
+                <td class="text-right text-nowrap">ab 15 EUR</td>
+              </tr>
+              <tr>
+                <td>Achseln / pro Achsel</td>
+                <td class="text-right text-nowrap">ab 13 EUR</td>
+              </tr>
+              <tr>
+                <td>Gesicht</td>
+                <td class="text-right text-nowrap">ab 8 EUR</td>
+              </tr>
+              <tr>
+                <td>Schultern</td>
+                <td class="text-right text-nowrap">ab 25 EUR</td>
+              </tr>
+              <tr>
+                <td>Rücken</td>
+                <td class="text-right text-nowrap">ab 55 EUR</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-          <div class="col-sm-6">
-            <table class="table caption-top">
-              <caption>
-                Wellness
-              </caption>
-              <tbody>
-                <tr>
-                  <td>Hotstone Massage</td>
-                  <td class="text-right text-nowrap">40 EUR</td>
-                </tr>
-                <tr>
-                  <td>Nackenmassage</td>
-                  <td class="text-right text-nowrap">25 EUR</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="col-sm-6">
+          <table class="table caption-top">
+            <caption>
+              Wellness
+            </caption>
+            <tbody>
+              <tr>
+                <td>Hotstone Massage</td>
+                <td class="text-right text-nowrap">40 EUR</td>
+              </tr>
+              <tr>
+                <td>Nackenmassage</td>
+                <td class="text-right text-nowrap">25 EUR</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--
+  <!--
     <div class="bgimg-3">
       <div class="caption">
         <span
@@ -741,191 +681,251 @@
     </div>
     -->
 
-    <!-- Aktuelles -->
-    <section id="news" class="pt-5">
-      <div class="container pt-4 pb-5">
-        <h1>Aktuelles</h1>
+  <!-- Aktuelles -->
+  <section id="news" class="pt-5">
+    <div class="container pt-4 pb-5">
+      <h1>Aktuelles</h1>
 
-        <h3>Corona Regeln</h3>
-        <ul>
-          <li>
-            Wichtig vor deinem Termin: <br />
-            Hattest du in den letzten 14 Tagen Kontakt zu einer COVID-19
-            infizierten Person? Fühlst du dich krank, oder hat eines deiner
-            Familienmitglieder Erkältungssymptome? Dann kann dein Termin leider
-            nicht stattfinden.
-          </li>
-          <li>
-            Ich bin verpflichtet, deine Kontaktdaten zur Nachverfolgung von
-            möglichen Infektionsketten zu notieren
-          </li>
-          <li>Es entstehen bei kurzfristiger Absage keinerlei Kosten.</li>
-          <li>
-            Bitte komm mit einen Mundschutz in mein Studio. Der Mundschutz darf
-            nur bei einer Kosmetikbehandlung abgenommen werden, wenn die
-            Inanspruchnahme der Behandlung ohne Abnehmen der Maske nicht
-            erfolgen kann.
-          </li>
-          <li>
-            Desinfiziere dir deine Hände direkt nachdem du das Studio betreten
-            hast. Desinfektionsmittel steht schon direkt am Eingang bereit.
-          </li>
-          <li>Leider kannst du aktuell keine Begleitpersonen mitbringen.</li>
-        </ul>
-        <p>
-          Bitte befolge die genauen Anweisungen im Studio. Danke für dein
-          Verständnis und deine Mithilfe bei der Umsetzung aller Vorgaben zur
-          Einhaltung der geltenden Hygienemaßnahmen.
-        </p>
-        <br />
+      <h3>Corona Regeln</h3>
+      <ul>
+        <li>
+          Wichtig vor deinem Termin: <br />
+          Hattest du in den letzten 14 Tagen Kontakt zu einer COVID-19
+          infizierten Person? Fühlst du dich krank, oder hat eines deiner
+          Familienmitglieder Erkältungssymptome? Dann kann dein Termin leider
+          nicht stattfinden.
+        </li>
+        <li>
+          Ich bin verpflichtet, deine Kontaktdaten zur Nachverfolgung von
+          möglichen Infektionsketten zu notieren
+        </li>
+        <li>Es entstehen bei kurzfristiger Absage keinerlei Kosten.</li>
+        <li>
+          Bitte komm mit einen Mundschutz in mein Studio. Der Mundschutz darf
+          nur bei einer Kosmetikbehandlung abgenommen werden, wenn die
+          Inanspruchnahme der Behandlung ohne Abnehmen der Maske nicht
+          erfolgen kann.
+        </li>
+        <li>
+          Desinfiziere dir deine Hände direkt nachdem du das Studio betreten
+          hast. Desinfektionsmittel steht schon direkt am Eingang bereit.
+        </li>
+        <li>Leider kannst du aktuell keine Begleitpersonen mitbringen.</li>
+      </ul>
+      <p>
+        Bitte befolge die genauen Anweisungen im Studio. Danke für dein
+        Verständnis und deine Mithilfe bei der Umsetzung aller Vorgaben zur
+        Einhaltung der geltenden Hygienemaßnahmen.
+      </p>
+      <br />
 
-        <h3>Downloads</h3>
-        <a
-          href="files/Einverstaendniserklaerung_fuer_Minderjaehrige.pdf"
-          target="_blank"
-          >Einverständniserklärung für Minderjährige</a
-        >
+      <h3>Downloads</h3>
+      <a href="files/Einverstaendniserklaerung_fuer_Minderjaehrige.pdf" target="_blank">Einverständniserklärung für
+        Minderjährige</a>
+    </div>
+  </section>
+
+  <div class="bgimg-1">
+    <div class="caption"></div>
+  </div>
+
+  <!-- about-->
+  <section id="about" class="pt-5 pb-5">
+    <div class="container pt-4">
+      <h1 class="caro-font">Übers Studio 8 und über mich...</h1>
+      <p>
+        Bereits während meiner Junged träumte ich von einem eigenen
+        Kosmetikstudio. Ein Studio in dem ich mich verwirklichen, meinen
+        eigenen Pflege- und Erholungsanspruch an meine Kunden weitergeben und
+        mit Kosmetikprodukten meiner Wahl arbeiten kann.<br />
+        Diesen Traum setzte ich direkt nach meinen Umzug in das schöne
+        Unterfanken um.<br />
+        Die Zufriedenheit meiner Kunden, denen ich hier eine Auszeit aus dem
+        oft hektischen Altag und damit eine kleine Oase der Ruhe biete, ist
+        meine größte Motivation.
+      </p>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="kontakt" class="pt-5">
+    <div class="container pt-4">
+      <h1>Kontakt</h1>
+      <p class="mt-4">
+        Du erreichst mich am einfachsten per WhatsApp unter
+        <a href="tel:+4915752965879">+49.157.52965879</a>
+        oder schreibe mir eine E-Mail an
+        <a href="mailto:carola.erb@outlook.com">carola.erb(at)outlook.com</a>
+      </p>
+      <p class="h4 mt-3">So geht's zum Studio!</p>
+      Mein Kosmetikstudio ist in Nassach zwischen Hofheim i. Ufr. und
+      Stadtlauringen. Am einfachsten du gibst einfach in dein Navi die
+      folgende Adresse ein:
+      <address class="mt-1 ml-5">
+        <b>Studio 8</b><br />
+        Distler 8<br />
+        97491 Aidhausen / Nassach
+      </address>
+    </div>
+    <!-- Google map-->
+    <div id="map"></div>
+  </section>
+
+  <footer class="container-fluid text-white bg-sitemap pt-5" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>Studio 8</h3>
+          <ul>
+            <li>Nageldesign</li>
+            <li>Wimpernlifting</li>
+            <li>Haarentfernung</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Kontakt</h3>
+          <dl class="contact-list">
+            <dt>Adresse:</dt>
+            <dd>Distler 8, 97491 Nassach</dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>E-Mail:</dt>
+            <dd>
+              <a href="mailto:carola.erb@outlook.com">carola.erb(at)outlook.com</a>
+            </dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>Telefon:</dt>
+            <dd>
+              <a href="tel:+4915752965879">+49.157.52965879</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="col">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#preise">Preise</a></li>
+            <li><a href="#news">Aktuelles</a></li>
+            <li><a href="#about">Übers Studio 8</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
       </div>
-    </section>
+      <hr />
+      <div class="row">
+        <div class="col">
+          <p class="float-right"><a href="#">Back to top</a></p>
+          <p>
+            © 2021 Studio 8 -
+            <button type="button" class="btn btn-link text-white mb-2" data-bs-toggle="modal" data-bs-target="#impresumModal">
+              Impressum
+            </button>
 
-    <div class="bgimg-1">
-      <div class="caption"></div>
+          </p>
+        </div>
+      </div>
+
+      <div class="row" id="social-media-footer">
+        <div class="row no-gutters social-container">
+          <div class="col">
+            <a class="social-inner" target="_blank" href="https://www.facebook.com/carola.erb.5"><span
+                class="icon mdi mdi-facebook"></span><span>Facebook</span></a>
+          </div>
+          <div class="col">
+            <a class="social-inner" target="_blank" href="https://www.instagram.com/erbcaro/"><span
+                class="icon mdi mdi-instagram"></span><span>instagram</span></a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- about-->
-    <section id="about" class="pt-5 pb-5">
-      <div class="container pt-4">
-        <h1 class="caro-font">Übers Studio 8 und über mich...</h1>
-        <p>
-          Bereits während meiner Junged träumte ich von einem eigenen
-          Kosmetikstudio. Ein Studio in dem ich mich verwirklichen, meinen
-          eigenen Pflege- und Erholungsanspruch an meine Kunden weitergeben und
-          mit Kosmetikprodukten meiner Wahl arbeiten kann.<br />
-          Diesen Traum setzte ich direkt nach meinen Umzug in das schöne
-          Unterfanken um.<br />
-          Die Zufriedenheit meiner Kunden, denen ich hier eine Auszeit aus dem
-          oft hektischen Altag und damit eine kleine Oase der Ruhe biete, ist
-          meine größte Motivation
-        </p>
-      </div>
-    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="impresumModal" tabindex="-1">
+      <div class="modal-dialog modal-xl xmodal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Impressum</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+            <p>Carola Erb<br />
+              Distler 8<br />
+              97491 Aidhausen</p>
 
-    <!-- contact -->
-    <section id="kontakt" class="pt-5">
-      <div class="container pt-4">
-        <h1>Kontakt</h1>
-        <p class="mt-4">
-          Du erreichst mich am einfachsten per WhatsApp unter
-          <a href="tel:+4915752965879">+49.157.52965879</a>
-          oder schreibe mir eine E-Mail an
-          <a href="mailto:carola.erb@outlook.com">carola.erb(at)outlook.com</a>
-        </p>
-        <p class="h4 mt-3">So geht's zum Studio!</p>
-        Mein Kosmetikstudio ist in Nassach zwischen Hofheim i. Ufr. und
-        Stadtlauringen. Am einfachsten du gibst einfach in dein Navi die
-        folgende Adresse ein:
-        <address class="mt-1 ml-5">
-          <b>Studio 8</b><br />
-          Distler 8<br />
-          97491 Aidhausen / Nassach
-        </address>
-      </div>
-      <!-- Google map-->
-      <div id="map"></div>
-    </section>
+            <h2>Kontakt</h2>
+            <p>Telefon: +49.157.52965879<br />
+              E-Mail: carola.erb@outlook.com</p>
 
-    <footer class="container-fluid text-white bg-sitemap pt-5" id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h3>Studio 8</h3>
-            <ul>
-              <li>Nageldesign</li>
-              <li>Wimpernlifting</li>
-              <li>Haarentfernung</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h3>Kontakt</h3>
-            <dl class="contact-list">
-              <dt>Adresse:</dt>
-              <dd>Distler 8, 97491 Nassach</dd>
-            </dl>
-            <dl class="contact-list">
-              <dt>E-Mail:</dt>
-              <dd>
-                <a href="mailto:carola.erb@outlook.com"
-                  >carola.erb(at)outlook.com</a
-                >
-              </dd>
-            </dl>
-            <dl class="contact-list">
-              <dt>Telefon:</dt>
-              <dd>
-                <a href="tel:+4915752965879">+49.157.52965879</a>
-              </dd>
-            </dl>
-          </div>
-          <div class="col">
-            <h3>Links</h3>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#preise">Preise</a></li>
-              <li><a href="#news">Aktuelles</a></li>
-              <li><a href="#about">Übers Studio 8</a></li>
-              <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-          </div>
-        </div>
-        <hr />
-        <div class="row">
-          <div class="col">
-            <p class="float-right"><a href="#">Back to top</a></p>
+            <h2>Redaktionell verantwortlich</h2>
+            <p>Carola Erb<br />
+              Distler 8<br />
+              97491 Aidhausen</p>
+
+
+            <h2>Haftungsausschluss (Disclaimer)</h2>
+
+            <h3>Haftung für Inhalte</h3>
             <p>
-              © 2021 Studio 8 -
-              <a href="impressum.html">Impresum / Datenschutz</a>
+              Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen
+              Gesetzen
+              verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte
+              oder
+              gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine
+              rechtswidrige
+              Tätigkeit hinweisen.
+
+              Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen
+              bleiben
+              hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer
+              konkreten
+              Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte
+              umgehend
+              entfernen.
+            </p>
+
+            <h3>Haftung für Links</h3>
+            <p>
+              Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben.
+              Deshalb
+              können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten
+              ist stets
+              der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum
+              Zeitpunkt der
+              Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung
+              nicht
+              erkennbar.
+
+              Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer
+              Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links
+              umgehend
+              entfernen.
             </p>
           </div>
-        </div>
-
-        <div class="row" id="social-media-footer">
-          <div class="row no-gutters social-container">
-            <div class="col">
-              <a
-                class="social-inner"
-                target="_blank"
-                href="https://www.facebook.com/carola.erb.5"
-                ><span class="icon mdi mdi-facebook"></span
-                ><span>Facebook</span></a
-              >
-            </div>
-            <div class="col">
-              <a
-                class="social-inner"
-                target="_blank"
-                href="https://www.instagram.com/erbcaro/"
-                ><span class="icon mdi mdi-instagram"></span
-                ><span>instagram</span></a
-              >
-            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Zurück
+            </button>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  </footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper.js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 2: Separate Popper.js and Bootstrap JS
+  <!-- Option 1: Bootstrap Bundle with Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper.js and Bootstrap JS
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-t6I8D5dJmMXjCsRLhSzCltuhNZg6P10kE0m0nAncLUjH6GeYLhRU1zfLoW3QNQDF" crossorigin="anonymous"></script>
    -->
-  </body>
+</body>
+
 </html>

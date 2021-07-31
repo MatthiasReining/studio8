@@ -171,6 +171,14 @@ body {
 #footer {
   background-color: $section2-bgcolor;
   color: $section2-color;
+
+  #impresumModal {
+    color: $section2-bgcolor;
+  }
+
+  .btn-link {
+    margin-left: -10px;
+  }
 }
 
 
