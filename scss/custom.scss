@@ -1,7 +1,14 @@
 $XXXmain-color: #b07592;
 $main-color: #ffffff;
 $secondary-color: #66153d;
-$background-color: #b07592;
+$XXXbackground-color: #b07592;
+$background-color: #868385;
+
+$section1-bgcolor: #868385;
+$section1-color: white;
+
+$section2-bgcolor: rgb(62, 41, 51);
+$section2-color: white;
 
 $body-color: $main-color;
 //$body-bg: rgb(255, 255, 255);
@@ -116,30 +123,56 @@ body {
 
 #services {
   xxxbackground: black url(../img/bg-pattern.jpg) repeat-y top center;
-  color: $secondary-color;
-}
+  
+  background-color: $section1-bgcolor;
+  color: $section1-color;
+  .card {
+    color: $section2-bgcolor;
 
-#preise {
-  background-color: rgb(62, 41, 51);
-  caption {
-    xcolor: rgb(62, 41, 51);
-    color: white;
+    button {
+      background-color: $section2-bgcolor;
+      border-color: $section2-bgcolor;
+    }
   }
 }
 
-#kontakt {
-  color: black;
-  xxxbackground: black url(../img/bg-pattern.jpg) repeat-y top center;
-
-  a {
-    xxxcolor: black;
-    color: white;
+#preise {
+  background-color: $section2-bgcolor;
+  caption {
+    color: $section2-color;
   }
 }
 
 #news {
-  background-color: #000;
+  background-color: $section1-bgcolor;
+  color: $section1-color;
+
+  a {
+    color: $section1-color
+  }
 }
+
+
+#about {
+  background-color: $section2-bgcolor;
+  color: $section2-color;
+}
+
+#kontakt {
+  background-color: $section1-bgcolor;
+  color: $section1-color;
+  xxxbackground: black url(../img/bg-pattern.jpg) repeat-y top center;
+
+  a {
+    color: $section2-color
+  }
+}
+
+#footer {
+  background-color: $section2-bgcolor;
+  color: $section2-color;
+}
+
 
 #social-media-footer {
   .context-dark,

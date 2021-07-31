@@ -7395,7 +7395,7 @@ textarea.form-control-lg {
 
 body {
   xxxbackground: black;
-  background: #b07592; }
+  background: #868385; }
 
 .bg-pink {
   background-color: #ffffff; }
@@ -7478,23 +7478,39 @@ body {
 
 #services {
   xxxbackground: black url(../img/bg-pattern.jpg) repeat-y top center;
-  color: #66153d; }
+  background-color: #868385;
+  color: white; }
+  #services .card {
+    color: #3e2933; }
+    #services .card button {
+      background-color: #3e2933;
+      border-color: #3e2933; }
 
 #preise {
   background-color: #3e2933; }
   #preise caption {
-    xcolor: #3e2933;
-    color: white; }
-
-#kontakt {
-  color: black;
-  xxxbackground: black url(../img/bg-pattern.jpg) repeat-y top center; }
-  #kontakt a {
-    xxxcolor: black;
     color: white; }
 
 #news {
-  background-color: #000; }
+  background-color: #868385;
+  color: white; }
+  #news a {
+    color: white; }
+
+#about {
+  background-color: #3e2933;
+  color: white; }
+
+#kontakt {
+  background-color: #868385;
+  color: white;
+  xxxbackground: black url(../img/bg-pattern.jpg) repeat-y top center; }
+  #kontakt a {
+    color: white; }
+
+#footer {
+  background-color: #3e2933;
+  color: white; }
 
 #social-media-footer .context-dark,
 #social-media-footer .bg-gray-dark,
