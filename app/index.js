@@ -38,9 +38,9 @@ function showSlides(n) {
   img.classList.add("show");
 }
 function initMap() {
-  const myLatLng = {
-    lat: 50,
-    lng: 10,
+  const myLatLng = {    
+    lat: 50.18583,
+    lng: 10.46130
   };
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 10,
