@@ -418,15 +418,15 @@ header a.control {
 
 .start-page.show {
   opacity: 1;
-  transition: opacity 2s;
+  // transition: opacity 2s;
 
-  animation-name: fade-slide-down;
-  animation-duration: 15s;
-  animation-delay: initial;
-  animation-iteration-count: infinite;
-  animation-direction: initial;
-  animation-fill-mode: forwards;
-  animation-play-state: initial;
+  // animation-name: fade-slide-down;
+  // animation-duration: 15s;
+  // animation-delay: initial;
+  // animation-iteration-count: infinite;
+  // animation-direction: initial;
+  // animation-fill-mode: forwards;
+  // animation-play-state: initial;
 }
 
 .start-page.hide {

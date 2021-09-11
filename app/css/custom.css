@@ -7721,15 +7721,7 @@ header a.control {
     opacity: 1; } }
 
 .start-page.show {
-  opacity: 1;
-  transition: opacity 2s;
-  animation-name: fade-slide-down;
-  animation-duration: 15s;
-  animation-delay: initial;
-  animation-iteration-count: infinite;
-  animation-direction: initial;
-  animation-fill-mode: forwards;
-  animation-play-state: initial; }
+  opacity: 1; }
 
 .start-page.hide {
   opacity: 0;
