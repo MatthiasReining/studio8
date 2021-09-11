@@ -18,6 +18,7 @@ gulp.task(
     //gulp.series("", function () {
     browserSync.init({
       server: "./app/",
+      browser: ["google chrome", "firefox"]
     });
 
     gulp.watch("scss/*.scss", gulp.series("sass"));
