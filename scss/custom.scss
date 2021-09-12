@@ -49,9 +49,10 @@ body {
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
-  // position: relative;
-  // opacity: 0.65;
-  background-attachment: fixed;
+  position: relative;
+  opacity: 0.65;
+  -khtml-opacity: 0.65;
+  // background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -455,13 +456,16 @@ header a.control {
 */
 @keyframes fade-slide-down {
   0% {
-    transform: translate3d(0.4em, 0.4em, 0.4em);
+    -webkit-transform: translate3d(0.4em, 0.4em, 0.4em);    
+    transform: translate3d(0.4em, 0.4em, 0.4em);    
   }
   50% {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);    
+    transform: translate3d(0, 0, 0);    
   }
   100% {
-    transform: translate3d(0.4em, 0.4em, 0.4em);
+    -webkit-transform: translate3d(0.4em, 0.4em, 0.4em);    
+    transform: translate3d(0.4em, 0.4em, 0.4em);    
   }
 }
 
