@@ -7533,6 +7533,8 @@ body {
 #social-media-footer .nav-list li a:hover:before {
   margin-left: 0;
   opacity: 1;
+  filter: alpha(opacity=100);
+  -khtml-opacity: 1;
   visibility: visible; }
 
 #social-media-footer ul,
@@ -7563,6 +7565,8 @@ body {
   margin-left: -28px;
   margin-right: 7px;
   opacity: 0;
+  filter: alpha(opacity=0);
+  -khtml-opacity: 0;
   visibility: hidden;
   transition: 0.22s ease; }
 
@@ -7642,7 +7646,9 @@ header.start-page-container {
   display: table;
   /* to center section inside */
   opacity: 0;
-  /* hide default value */ }
+  /* hide default value */
+  filter: alpha(opacity=0);
+  -khtml-opacity: 0; }
 
 .bg-img {
   background-position-x: 50%;
@@ -7714,39 +7720,60 @@ header a.control {
   header a.control:hover {
     background-color: #ffffff; }
 
-@keyframes fade {
-  from {
-    opacity: 0.2; }
-  to {
-    opacity: 1; } }
-
 .start-page.show {
-  opacity: 1; }
+  opacity: 1;
+  transition: opacity 2s;
+  animation-name: fade-slide-down;
+  animation-duration: 15s;
+  animation-delay: initial;
+  animation-iteration-count: infinite;
+  animation-direction: initial;
+  animation-fill-mode: forwards;
+  animation-play-state: initial; }
 
 .start-page.hide {
   opacity: 0;
+  /* hide default value */
+  filter: alpha(opacity=0);
+  -khtml-opacity: 0;
+  /* opacity: 0; */
   /*transition: opacity 2s;*/ }
 
+/*
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+*/
+/*
 @keyframes fade-in {
   from {
-    opacity: 0; }
+    opacity: 0;
+  }
   to {
-    opacity: 1; } }
-
+    opacity: 1;
+  }
+}
 @keyframes fade-out {
   from {
-    opacity: 1; }
+    opacity: 1;
+  }
   to {
-    opacity: 0; } }
-
-/* Animations */
+    opacity: 0;
+  }
+}
+*/
 @keyframes fade-slide-down {
   0% {
-    transform: translate3d(0.25em, 0.25em, 0.25em); }
+    transform: translate3d(0.4em, 0.4em, 0.4em); }
   50% {
     transform: translate3d(0, 0, 0); }
   100% {
-    transform: translate3d(0.25em, 0.25em, 0.25em); } }
+    transform: translate3d(0.4em, 0.4em, 0.4em); } }
 
 .navbar {
   font-size: 1.5rem; }

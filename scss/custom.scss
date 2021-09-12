@@ -123,7 +123,7 @@ body {
 
 #services {
   xxxbackground: black url(../img/bg-pattern.jpg) repeat-y top center;
-  
+
   background-color: $section1-bgcolor;
   color: $section1-color;
   .card {
@@ -148,10 +148,9 @@ body {
   color: $section1-color;
 
   a {
-    color: $section1-color
+    color: $section1-color;
   }
 }
-
 
 #about {
   background-color: $section2-bgcolor;
@@ -164,7 +163,7 @@ body {
   xxxbackground: black url(../img/bg-pattern.jpg) repeat-y top center;
 
   a {
-    color: $section2-color
+    color: $section2-color;
   }
 }
 
@@ -180,7 +179,6 @@ body {
     margin-left: -10px;
   }
 }
-
 
 #social-media-footer {
   .context-dark,
@@ -202,6 +200,8 @@ body {
   .nav-list li a:hover:before {
     margin-left: 0;
     opacity: 1;
+    filter: alpha(opacity=100);
+    -khtml-opacity: 1;
     visibility: visible;
   }
 
@@ -235,6 +235,8 @@ body {
     margin-left: -28px;
     margin-right: 7px;
     opacity: 0;
+    filter: alpha(opacity=0);
+    -khtml-opacity: 0;
     visibility: hidden;
     transition: 0.22s ease;
   }
@@ -321,6 +323,8 @@ header.start-page-container {
   display: table; /* to center section inside */
 
   opacity: 0; /* hide default value */
+  filter: alpha(opacity=0);
+  -khtml-opacity: 0;
 }
 
 .bg-img {
@@ -407,6 +411,31 @@ header a.control {
   }
 }
 
+.start-page.show {
+  opacity: 1; 
+  //filter: alpha(opacity=100);
+  //-khtml-opacity: 1;
+
+  transition: opacity 2s;
+  animation-name: fade-slide-down;
+  animation-duration: 15s;
+  animation-delay: initial;
+  animation-iteration-count: infinite;
+  animation-direction: initial;
+  animation-fill-mode: forwards;
+  animation-play-state: initial;
+}
+
+.start-page.hide {
+  opacity: 0; /* hide default value */
+  filter: alpha(opacity=0);
+  -khtml-opacity: 0;
+
+  /* opacity: 0; */
+  /*transition: opacity 2s;*/
+}
+
+/*
 @keyframes fade {
   from {
     opacity: 0.2;
@@ -415,24 +444,9 @@ header a.control {
     opacity: 1;
   }
 }
+*/
 
-.start-page.show {
-  opacity: 1;
-  // transition: opacity 2s;
-
-  // animation-name: fade-slide-down;
-  // animation-duration: 15s;
-  // animation-delay: initial;
-  // animation-iteration-count: infinite;
-  // animation-direction: initial;
-  // animation-fill-mode: forwards;
-  // animation-play-state: initial;
-}
-
-.start-page.hide {
-  opacity: 0;
-  /*transition: opacity 2s;*/
-}
+/*
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -449,17 +463,16 @@ header a.control {
     opacity: 0;
   }
 }
-/* Animations */
-
+*/
 @keyframes fade-slide-down {
   0% {
-    transform: translate3d(0.25em, 0.25em, 0.25em);
+    transform: translate3d(0.4em, 0.4em, 0.4em);
   }
   50% {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(0.25em, 0.25em, 0.25em);
+    transform: translate3d(0.4em, 0.4em, 0.4em);
   }
 }
 
