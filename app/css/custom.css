@@ -7405,28 +7405,15 @@ body {
     text-decoration: none; }
 
 .bg-sitemap {
-  xxxbackground-color: #6e0847;
   background-color: #383434; }
   .bg-sitemap a {
     color: white; }
   .bg-sitemap a:visited {
     text-decoration: none; }
 
-.parallax {
-  /* The image used */
-  background-image: url("img_parallax.jpg");
-  /* Set a specific height */
-  height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
-  position: relative;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -7455,12 +7442,15 @@ body {
   font-weight: 800; }
 
 /* Turn off parallax scrolling for tablets and phones */
+/*
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
-    background-attachment: scroll; } }
-
+    background-attachment: scroll;
+  }
+}
+*/
 .map-container {
   overflow: hidden;
   xxxpadding-bottom: 56.25%;
@@ -7641,7 +7631,6 @@ header.start-page-container {
   height: 100%;
   height: fill-available;
   width: 100%;
-  position: fixed;
   display: table;
   /* to center section inside */ }
 
@@ -7717,7 +7706,6 @@ header a.control {
 
 .start-page.show {
   transition: opacity 2s;
-  animation-name: fade-slide-down;
   animation-duration: 15s;
   animation-delay: initial;
   animation-iteration-count: infinite;

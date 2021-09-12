@@ -35,7 +35,6 @@ body {
 }
 
 .bg-sitemap {
-  xxxbackground-color: rgb(110, 8, 71);
   background-color: #383434;
   @extend .text-white;
   a {
@@ -46,24 +45,11 @@ body {
   }
 }
 
-.parallax {
-  /* The image used */
-  background-image: url("img_parallax.jpg");
-
-  /* Set a specific height */
-  height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
-  position: relative;
+  // position: relative;
   // opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
@@ -98,6 +84,7 @@ body {
 }
 
 /* Turn off parallax scrolling for tablets and phones */
+/*
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1,
   .bgimg-2,
@@ -105,6 +92,7 @@ body {
     background-attachment: scroll;
   }
 }
+*/
 
 .map-container {
   overflow: hidden;
@@ -319,7 +307,7 @@ header.start-page-container {
   height: 100%;
   height: fill-available;
   width: 100%;
-  position: fixed;
+  // position: fixed;
   display: table; /* to center section inside */
 
   // opacity: 0; /* hide default value */
@@ -417,7 +405,8 @@ header a.control {
   //-khtml-opacity: 1;
 
   transition: opacity 2s;
-  animation-name: fade-slide-down;
+  // animation-name: fade-slide-down;
+  // is not working in Safari with the claim box (claim box is not visible)
   animation-duration: 15s;
   animation-delay: initial;
   animation-iteration-count: infinite;
