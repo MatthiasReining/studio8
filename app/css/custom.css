@@ -7427,7 +7427,6 @@ body {
 .bgimg-2,
 .bgimg-3 {
   position: relative;
-  opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -7644,11 +7643,7 @@ header.start-page-container {
   width: 100%;
   position: fixed;
   display: table;
-  /* to center section inside */
-  opacity: 0;
-  /* hide default value */
-  filter: alpha(opacity=0);
-  -khtml-opacity: 0; }
+  /* to center section inside */ }
 
 .bg-img {
   background-position-x: 50%;
@@ -7721,7 +7716,6 @@ header a.control {
     background-color: #ffffff; }
 
 .start-page.show {
-  opacity: 1;
   transition: opacity 2s;
   animation-name: fade-slide-down;
   animation-duration: 15s;
@@ -7732,10 +7726,6 @@ header a.control {
   animation-play-state: initial; }
 
 .start-page.hide {
-  opacity: 0;
-  /* hide default value */
-  filter: alpha(opacity=0);
-  -khtml-opacity: 0;
   /* opacity: 0; */
   /*transition: opacity 2s;*/ }
 
