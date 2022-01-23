@@ -11220,8 +11220,19 @@ body {
 }
 
 .bgimg-2 {
+  background-color: white;
   background-image: url("../img/logo3_1.jpg");
-  min-height: 900px;
+  min-height: 600px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 1000px) {
+  .bgimg-2 {
+    min-height: 200px;
+    background-size: contain;
+  }
 }
 
 .bgimg-3 {
