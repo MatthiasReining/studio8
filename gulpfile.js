@@ -1,5 +1,5 @@
+const sass = require('gulp-sass')(require('sass'));
 var gulp = require("gulp");
-var sass = require("gulp-sass");
 var browserSync = require("browser-sync").create();
 
 // Compile sass into CSS & auto-inject into browsers
