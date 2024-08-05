@@ -45,10 +45,9 @@ body {
   }
 }
 
-
 .bgimg-1,
 .bgimg-2,
-.bgimg-3 {
+.XXXbgimg-3 {
   position: relative;
   // opacity: 0.65;
   // -khtml-opacity: 0.65;
@@ -66,9 +65,9 @@ body {
   // background-image: url("../img/caro-wald2.jpg");
   background-color: white;
   background-image: url("../img/logo3_1.jpg");
-  min-height: 600px; 
+  min-height: 600px;
   //height: 600px;
-  position: relative;  
+  position: relative;
   // background-size: 70%;
   // background-attachment: fixed;
   background-position: center;
@@ -78,12 +77,20 @@ body {
     min-height: 200px;
     background-size: contain;
   }
-    
 }
 
 .bgimg-3 {
-  background-image: url("../img/caro-auto.jpg");
-  min-height: 600px;
+  position: relative;
+  // opacity: 0.65;
+  // -khtml-opacity: 0.65;
+  // background-attachment: fixed;
+  // background-position: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url("../img/caro-chair.jpg");
+  min-height: 900px;
 }
 
 #preise table caption {
@@ -415,7 +422,7 @@ header a.control {
 }
 
 .start-page.show {
-  // opacity: 1; 
+  // opacity: 1;
   //filter: alpha(opacity=100);
   //-khtml-opacity: 1;
 
@@ -470,16 +477,16 @@ header a.control {
 */
 @keyframes fade-slide-down {
   0% {
-    -webkit-transform: translate3d(0.4em, 0.4em, 0.4em);    
-    transform: translate3d(0.4em, 0.4em, 0.4em);    
+    -webkit-transform: translate3d(0.4em, 0.4em, 0.4em);
+    transform: translate3d(0.4em, 0.4em, 0.4em);
   }
   50% {
-    -webkit-transform: translate3d(0, 0, 0);    
-    transform: translate3d(0, 0, 0);    
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    -webkit-transform: translate3d(0.4em, 0.4em, 0.4em);    
-    transform: translate3d(0.4em, 0.4em, 0.4em);    
+    -webkit-transform: translate3d(0.4em, 0.4em, 0.4em);
+    transform: translate3d(0.4em, 0.4em, 0.4em);
   }
 }
 

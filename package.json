@@ -29,7 +29,6 @@
     "gulp-livereload": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "gulp-watch": "^5.0.1",
-    "node-sass": "^7.0.1",
     "sass": "^1.49.0"
   }
 }
