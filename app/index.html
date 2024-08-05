@@ -1,437 +1,703 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Studio 8 - dein Kosmetikstudio! Nageldesign, Lash- und Browlifting, Microblading, Sugaring, ... und Feelgood Atmosphere immer dabei 🫶🏼💗"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Studio 8 - dein Kosmetikstudio! Nageldesign, Lash- und Browlifting, Microblading, Sugaring, ... und Feelgood Atmosphere immer dabei 🫶🏼💗">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-5688478-9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5688478-9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "UA-5688478-9");
+    </script>
 
-    gtag('config', 'UA-5688478-9');
-  </script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/custom.css" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+    <title>Studio 8</title>
 
-  <title>Studio 8</title>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiPkU5-J2ArpXsGFvCrnV3z0onKsYKXFg&map_ids=aa821d18db9991c4&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
 
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiPkU5-J2ArpXsGFvCrnV3z0onKsYKXFg&map_ids=aa821d18db9991c4&callback=initMap&libraries=&v=weekly"
-    defer></script>
+    <script src="index.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-  <script src="index.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
-  <style type="text/css">
-    /* Always set the map height explicitly to define the size of the div
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-    #map {
-      height: 400px;
-    }
-  </style>
+      #map {
+        height: 400px;
+      }
+    </style>
+  </head>
 
-
-</head>
-
-<body>
-  <header class="start-page-container">
-
-    <div class="position-absolute m-5 text-center studio-claim">
-      <h1 class="display-1 fw-bolder">Studio 8</h1>
-      <p class="display-5">- Kosmetik -</p>      
-    </div>
-
-    <div class="start-page s1">
-      <div class="bg-img bg-img-1"></div>
-    </div>
-
-  </header>
-
-
-  <!-- navbar -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand mr-5" href="#">Studio 8</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#preise">Preise</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#news">Aktuelles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Über mich</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#kontakt">Kontakt</a>
-          </li>
-        </ul>
+  <body>
+    <header class="start-page-container">
+      <div class="position-absolute m-5 text-center studio-claim">
+        <h1 class="display-1 fw-bolder">Studio 8</h1>
+        <p class="display-5">- Kosmetik -</p>
       </div>
-    </div>
-  </nav>
 
-  <!-- services -->
-  <section id="services" class="pt-5 pb-5">
-    <div class="container pt-4">
-      <h1>Services</h1>
+      <div class="start-page s1">
+        <div class="bg-img bg-img-1"></div>
+      </div>
+    </header>
 
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/wellness-manikuere.jpg"
-              xsrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEtTxKp_Aqa-vmC4ZOVgs0Iou79E5U0lb6Q&usqp=CAU"
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Nageldesign</h5>
-              <p class="card-text">
-                Maniküre und Pediküre natürlich mit individuellen Nageldesign.
-                <!--<br /><br />
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand mr-5" href="#">Studio 8</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#preise">Preise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">Aktuelles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Über mich</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- services -->
+    <section id="services" class="pt-5 pb-5">
+      <div class="container pt-4">
+        <h1>Services</h1>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/service-wimpern.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Lashlifting</h5>
+                <p class="card-text">
+                  Lashlifting, das Geheimnis für den perfekten Augenaufschlag.
+                  Eine extra Portion Schwung ohne Fake-Lashes.<br />
+                </p>
+                <!-- Button trigger modal -->
+              </div>
+              <div class="card-footer bg-transparent border-0 text-end">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#serviceWimpernDetails"
+                >
+                  ...mehr
+                </button>
+              </div>
+
+              <!-- start -->
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="serviceWimpernDetails"
+                tabindex="-1"
+                aria-labelledby="serviceWimpernDetails"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-xl xmodal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Lashlifting (Wimpern)</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+
+                    <div class="modal-body">
+                      <b>Was ist ein Lash- bzw. Wimpernlifting?</b><br />
+                      <p>
+                        Ein Wimpernlifting ist eine Art Dauerwelle für die
+                        Wimpern. Die Wimpernhärchen werden dabei mit
+                        verschiedenen Chemikalien behandelt, um sie dauerhaft in
+                        eine Form zu bringen. Der Effekt ist ähnlich wie nach
+                        dem Benutzen einer Wimpernzange: Die Wimpern werden nach
+                        oben gebogen und bekommen so den perfekten Schwung –
+                        bloß, dass der beim Lifting wesentlich länger anhält.
+                      </p>
+                      <p>
+                        Wäre es nicht schön, direkt nach dem Aufwachen schon
+                        nahezu <b>perfekt gestylte Wimpern</b> und einen tollen
+                        Augenaufschlag zu haben? Ein Wimpernlifting macht es
+                        möglich und dabei sieht das Ergebnis der Behandlung
+                        besonders natürlich aus. Im Gegensatz zu künstlichen
+                        Wimpern oder den sogenannten Wimpernextensions werden
+                        beim Lifting die eigenen Haare verwendet.
+                      </p>
+                      <p>
+                        Lashlifting ist die perfekte Alternative zur dauerhaften
+                        Wimpernverlängerung. Das Erzeugen der Welle erfolgt dann
+                        in zwei Phasen: Im ersten Schritt wird mit Hilfe einer
+                        Lotion die Schwefelbrücke in den Wimpern gebrochen. So
+                        löst sich die natürliche Struktur auf und kann verändert
+                        werden. Nach 8 bis 12 Minuten Einwirkzeit wird die
+                        Lotion abgetragen und die Wimpern mit einer zweiten
+                        Lösung bestrichen. Diese festigt die neue Wimpern-Form.
+                        Auch hier liegt die Einwirkzeit wieder bei 8 bis 12
+                        Minuten. Im Anschluss werden die Wimpern, wenn
+                        gewünscht, auch gefärbt, die Liftingpads vorsichtig
+                        abgezogen und fertig. Das Lifting ist sofort
+                        sichtbar.<br />
+                        <b>Ein wunderschöner Schwung und vollere Wimpern</b> –
+                        und das mit den eigenen Naturwimpern!
+                      </p>
+                      <hr />
+                      <p><strong>Vor dem Termin</strong> <br /></p>
+                      <ul>
+                        <li>
+                          Bei einem Lashlifting verzichte bitte 24 Stunden vor
+                          der Behandlung auf den Gebrauch von
+                          Wimpernwachstumsserum und ölhaltigen Kosmetikprodukten
+                        </li>
+                        <li>
+                          Komme bitte ungeschminkt zum Termin. Also ohne
+                          Mascara, Eyliner, Lidschatten
+                        </li>
+                        <li>
+                          Bei stark verunreinigten Wimpern muss man eine
+                          komplette Reinigung der Augen / Wimpern vornehmen.
+                          Dieser Mehraufwand wird extra berechnet
+                        </li>
+                        <li>
+                          Wenn du Kontaktlinsenträgerin bist, bringe bitte einen
+                          Behälter für deine Linsen mit.
+                        </li>
+                      </ul>
+
+                      <strong>Nach dem Termin</strong> <br />
+                      <ul>
+                        <li>
+                          Um einen langanhaltenden Effekt nach dem Brow &
+                          Lashlifting zu erreichen, ist es NOTWENDIG ein
+                          Aftercare Serum zu benutzen
+                        </li>
+                        <li>
+                          Damit die Wimpern und Brauen weich geschmeidig
+                          bleiben, kann die Behandlung problemlos nach 6-8
+                          Wochen wiederholt werden
+                        </li>
+                      </ul>
+
+                      <strong>Do´s & Dont´s</strong><br />
+
+                      24 Stunden nach der Behandlung <br />
+                      <ul>
+                        <li>
+                          sollten deine Brauen und Wimpern nicht nass werden
+                        </li>
+                        <li>solltest du dir nicht die Augen reiben</li>
+                        <li>verzichte auf Augen Make-up</li>
+                        <li>
+                          vermeide das Schlafen auf der Seite oder auf deinem
+                          Gesicht 48 Stunden nach der Behandlung <br />
+                        </li>
+                        <li>
+                          halte dich von Dampf oder heißem Wasser fern, lege
+                          Saunagänge bzw. einen Besuch im SPA lieber auf einen
+                          anderen Tag
+                        </li>
+                      </ul>
+                      <p>
+                        Verwende generell keine scharfen Reiniger oder
+                        Öl-basierte Make-up Entferner
+                      </p>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Zurück
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/service-browlifting.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Browlifting</h5>
+                <p class="card-text">
+                  Browlifting, der neueste Trend des Jahres! Die perfekte
+                  Dauerwelle für die Augenbrauen.
+                </p>
+                <!-- Button trigger modal -->
+              </div>
+              <div class="card-footer bg-transparent border-0 text-end">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#serviceBrowliftingDetails"
+                >
+                  ...mehr
+                </button>
+              </div>
+
+              <!-- start -->
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="serviceBrowliftingDetails"
+                tabindex="-1"
+                aria-labelledby="serviceBrowliftingDetails"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-xl xmodal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Browlifting</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+
+                    <div class="modal-body">
+                      <b>Was ist ein Browlifting?</b><br />
+                      <p>
+                        Bei einem Browlifting (auch Augenbrauen Lifting) werden
+                        die Augenbrauen <b>permanent fixiert</b>. So wird für
+                        mehrere Wochen ein perfekt gestylter Look erzielt. Durch
+                        ein Browlifting wirken Ihre Augenbrauen zudem
+                        <b>voller und kräftiger</b>. Auch dünne Augenbrauen
+                        bekommen durch ein Browlifting mehr Volumen und ein
+                        volles Aussehen. Die Methode ist besonders beliebt, um
+                        die angesagten <b>buschigen Augenbrauen</b> zu stylen.
+                      </p>
+                      <p>
+                        <b>Vorteile eines Browliftings</b><br />
+                        Ein Browlifting hat viele Vorteile. Neben den optischen
+                        Ergebnissen, die mit der Methode erzielt werden können,
+                        überzeugt die Behandlung auch, weil sie
+                        <b>natürlich und schmerzfrei</b> ist. Denn es handelt
+                        sich um eine <b>nicht-invasive kosmetische Methode</b>.
+                        Zudem wird bei einem Browlifting ausschließlich mit
+                        ihren
+                        <b>natürlichen Augenbrauenhärchen gearbeitet</b> und
+                        darauf geachtet, dass diese durch die Behandlung nicht
+                        geschädigt werden.
+                      </p>
+                      <p>
+                        Beim Browlifting können Ihre Augenbrauen in ganz
+                        <b>individuellen Looks</b> permanent gestylt werden.
+                        Durch das Styling können auch kleine Unebenheiten oder
+                        Lücken in den Augenbrauen kaschiert werden. Damit ist
+                        ein Browlifting genau die richtige Wahl für alle, die
+                        sich volle Augenbrauen wünschen.
+                      </p>
+                      <hr />
+
+                      <strong>Nach dem Termin</strong> <br />
+                      <p>
+                        Die Lotionen, die beim Browlifting zum Einsatz kommen,
+                        entfalten Ihre volle Wirkung innerhalb von 24 Stunden.
+                        Deshalb solltest du in dieser Zeit besonders sorgsam mit
+                        deinen gelifteten Augenbrauen umgehen und zum Beispiel
+                        Wasserkontakt und direkte Sonneneinstrahlung vermeiden.
+                        Danach hast du durch das Browlifting keinerlei
+                        Einschränkungen im Alltag. Bei Bedarf können die
+                        Augenbrauenhärchen mit einer Bürste in die gewünschte
+                        Position gestylt werden.
+                      </p>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Zurück
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/service-microblading.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Microblading</h5>
+                <p class="card-text">
+                  Erhalte perfekt definierte Augenbrauen mit der präzisen
+                  Microblading-Technik basierend von der Phi Academy.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0 text-end">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#serviceMicroblading"
+                >
+                  ...mehr
+                </button>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="serviceMicroblading"
+                tabindex="-1"
+                aria-labelledby="serviceMicroblading"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-xl xmodal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Microblading</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+
+                    <div class="modal-body">
+                      <p>
+                        Microblading ist eine kosmetische Methode, bei der eine
+                        Microblading Artistin mit einer kleinen Nadel
+                        federleichte Striche auf die Haut zeichnet, um die
+                        Augenbrauen aufzufüllen. Diese handgezeichneten Striche
+                        verleihen Deinen Brauen eine bessere Definition und
+                        lassen sie dicker und voller aussehen. Sie ermöglichen
+                        es der Artistin auch, Dir eine individuelle
+                        Augenbrauenform zu geben, die zu Deinen Gesichtszügen
+                        passt. Im Gegensatz zu anderen Methoden, wird beim
+                        Microblading das Pigment unter die Hautoberfläche
+                        aufgetragen. Du musst nicht befürchten, dass die Farbe
+                        beim Reinigen Deines Gesichtes oder beim Duschen
+                        abgewaschen wird. Im Durchschnitt kannst Du davon
+                        ausgehen, dass das Ergebnis einer
+                        Microblading-Behandlung zwischen 1 und 1,5 Jahren hält,
+                        abhängig von dem Fettgehalt der Haut und ihrer
+                        Regenarationsgeschwindigkeit. Die leichten, präzisen
+                        Striche sorgen für ein natürlicheres Aussehen, müssen
+                        aber von jemandem ausgeführt werden, der die Kunst des
+                        Microbladings beherrscht.
+                      </p>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Zurück
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-3 mt-3">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="img/wellness-manikuere.jpg"
+                xsrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEtTxKp_Aqa-vmC4ZOVgs0Iou79E5U0lb6Q&usqp=CAU"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nageldesign</h5>
+                <p class="card-text">
+                  Maniküre und Pediküre natürlich mit individuellen Nageldesign.
+                  <!--<br /><br />
                   Ich biete euch nicht nur die heißesten Lacke an, sondern auch
                   das entsprechende Know-How für ein perfektes Aussehen. Das
                   Portfolio reicht von Maniküre, Naturnagelverstärkung und
                   -auffüllung bis zur Pediküre, Lackieren und Peeling.
                   -->
-              </p>
-            </div>
-            <div class="card-footer bg-transparent border-0 text-end">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                data-bs-target="#serviceNailsDetails">
-                ...mehr
-              </button>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="serviceNailsDetails" tabindex="-1">
-              <div class="modal-dialog modal-xl xmodal-fullscreen">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Nageldesign</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <h2>Pflegehinweise</h2>
-                    <h3>NAILS</h3>
-                    <p>
-                      Bitte beachte folgende Empfehlungen. Diese haben sich in
-                      der Praxis bewährt und sind die Basis für schöne Hände
-                      und Nägel.
-                    </p>
-                    <ul>
-                      <li>
-                        Bitte denke daran, dass die Nägel für dich neu sind.
-                        Es werden ca. zwei bis drei Tage nötig sein, bis du
-                        dich an die neue Länge gewöhnt hast.
-                      </li>
-
-                      <li>
-                        Setze die Nägel niemals als Werkzeug ein, denn sie
-                        können brechen, im schlimmsten Fall auch der
-                        Naturnagel.
-                      </li>
-
-                      <li>
-                        Je nach Wachstum und Beanspruchung deiner Nägel muss
-                        du diese nach 3 - 4 Wochen auffüllen lassen.
-                      </li>
-
-                      <li>
-                        Trage deine Nägel nicht zu lang, wähle eine Länge, die
-                        zu deinem Lebensstil passt.
-                      </li>
-
-                      <li>
-                        Knipse oder schneide deine Fingernägel niemals selbst,
-                        das Material würde brechen. Feile deine Nägel mit
-                        einer Feile, die für Kunstnägel geeignet ist. Diese
-                        kannst du auch direkt bei mir erwerben.
-                      </li>
-
-                      <li>
-                        Durch das Auftragen von Klarlack schützt du deine
-                        Nägel vor Verfärbungen, z.B. durch Nikotin oder
-                        Solarium.
-                      </li>
-
-                      <li>
-                        Trage Handschuhe bei Haus-, Putz- und Gartenarbeiten,
-                        um deine Nägel nicht durch scharfe Putzmittel zu
-                        gefährden oder Verfärbungen zu riskieren.
-                      </li>
-
-                      <li>
-                        Verwöhne deine Nägel täglich mit einem Tropfen
-                        Nagelöl, es pflegt die Nagelhaut und hält den Nagel
-                        und die Modellage elastisch. Verwende zur Handpflege
-                        ein hochwertiges Produkt.
-                      </li>
-
-                      <li>
-                        Wenn deine Gelnägel versiegelt wurden, kannst du sie
-                        zwar mit ganz normalem Nagellack lackieren, solltest
-                        aber bei der Entfernung des Lacks darauf achten, dass
-                        dieser acentonfrei ist.
-                      </li>
-
-                      <li>
-                        Entferne den Kunstnagel niemals gewaltsam, sonst reißt
-                        die obere Schicht deines Naturnagels aufgrund der
-                        festen Verbindung mit ab.
-                      </li>
-
-                      <li>
-                        Bitte creme die Hände am Tag der Modellage nicht ein
-                        und verwende auch kein Nagelöl.
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                      Zurück
-                    </button>
-                  </div>
-                </div>
+                </p>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/service-wimpern.jpg" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Wimpern</h5>
-              <p class="card-text">
-                Lash & Browlifting.<br />
-                Lashlifting, das Geheimnis für den perfekten Augenaufschlag.
-                Eine extra Portion Schwung ohne Fake-Lashes.<br />
-                Browlifting, der neueste Trend des Jahres! Die perfekte
-                Dauerwelle für die Augenbrauen.
-              </p>
-              <!-- Button trigger modal -->
-            </div>
-            <div class="card-footer bg-transparent border-0 text-end">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                data-bs-target="#serviceWimpernDetails">
-                ...mehr
-              </button>
-            </div>
-
-            <!-- start -->
-
-            <!-- Modal -->
-            <div class="modal fade" id="serviceWimpernDetails" tabindex="-1" aria-labelledby="serviceWimpernDetails"
-              aria-hidden="true">
-              <div class="modal-dialog modal-xl xmodal-fullscreen">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Wimpern</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-
-                  <div class="modal-body">
-                    Was ist ein Wimpern-/Lashlifting?<br />
-                    <p>
-                      Ein Wimpernlifting ist eine Art Dauerwelle für die
-                      Wimpern. Die Wimpernhärchen werden dabei mit
-                      verschiedenen Chemikalien behandelt, um sie dauerhaft in
-                      eine Form zu bringen. Der Effekt ist ähnlich wie nach
-                      dem Benutzen einer Wimpernzange: Die Wimpern werden nach
-                      oben gebogen und bekommen so den perfekten Schwung –
-                      bloß, dass der beim Lifting wesentlich länger anhält.
-                    </p>
-                    <p>
-                      Wäre es nicht schön, direkt nach dem Aufwachen schon
-                      nahezu perfekt gestylte Wimpern und einen tollen
-                      Augenaufschlag zu haben? Ein Wimpernlifting macht es
-                      möglich und dabei sieht das Ergebnis der Behandlung
-                      besonders natürlich aus. Im Gegensatz zu künstlichen
-                      Wimpern oder den sogenannten Wimpernextensions werden
-                      beim Lifting die eigenen Haare verwendet.
-                    </p>
-                    <p>
-                      Lashlifting ist die
-                      perfekte Alternative zur dauerhaften Wimpernverlängerung.
-                      Das Erzeugen der Welle erfolgt dann in zwei Phasen: Im
-                      ersten Schritt wird mit Hilfe einer Lotion die
-                      Schwefelbrücke in den Wimpern gebrochen. So löst sich
-                      die natürliche Struktur auf und kann verändert werden.
-                      Nach 8 bis 12 Minuten Einwirkzeit wird die Lotion
-                      abgetragen und die Wimpern mit einer zweiten Lösung
-                      bestrichen. Diese festigt die neue Wimpern-Form. Auch
-                      hier liegt die Einwirkzeit wieder bei 8 bis 12 Minuten.
-                      Im Anschluss werden die Wimpern, wenn gewünscht, auch
-                      gefärbt, die Liftingpads vorsichtig abgezogen und
-                      fertig. Das Lifting ist sofort sichtbar.<br>
-                      Ein wunderschöner Schwung und vollere Wimpern – und das
-                      mit den eigenen Naturwimpern!
-                    </p>
-                    <hr />
-                    <p><strong>Vor dem Termin</strong> <br /></p>
-                    <ul>
-                      <li>
-                        Bei einem Lashlifting verzichte bitte 24 Stunden vor
-                        der Behandlung auf den Gebrauch von
-                        Wimpernwachstumsserum und ölhaltigen Kosmetikprodukten
-                      </li>
-                      <li>
-                        Komme bitte ungeschminkt zum Termin. Also ohne Mascara,
-                        Eyliner, Lidschatten
-                      </li>
-                      <li>
-                        Bei stark verunreinigten Wimpern muss man eine
-                        komplette Reinigung der Augen / Wimpern vornehmen.
-                        Dieser Mehraufwand wird extra berechnet
-                      </li>
-                      <li>
-                        Wenn du Kontaktlinsenträgerin bist, bringe bitte
-                        einen Behälter für deine Linsen mit.
-                      </li>
-
-                    </ul>
-
-                    <strong>Nach dem Termin</strong> <br />
-                    <ul>
-                      <li>
-                        Um einen langanhaltenden Effekt nach dem Brow &
-                        Lashlifting zu erreichen, ist es NOTWENDIG ein
-                        Aftercare Serum zu benutzen
-                      </li>
-                      <li>
-                        Damit die Wimpern und Brauen weich geschmeidig
-                        bleiben, kann die Behandlung problemlos nach 6-8
-                        Wochen wiederholt werden
-                      </li>
-                    </ul>
-
-                    <strong>Do´s & Dont´s</strong><br />
-
-                    24 Stunden nach der Behandlung <br />
-                    <ul>
-                      <li>
-                        sollten deine Brauen und Wimpern nicht nass werden
-                      </li>
-                      <li>solltest du dir nicht die Augen reiben</li>
-                      <li>verzichte auf Augen Make-up</li>
-                      <li>
-                        vermeide das Schlafen auf der Seite oder auf deinem
-                        Gesicht 48 Stunden nach der Behandlung <br />
-                      </li>
-                      <li>
-                        halte dich von Dampf oder heißem Wasser fern, lege
-                        Saunagänge bzw. einen Besuch im SPA lieber auf einen anderen Tag
-                      </li>
-                    </ul>
-                    <p>
-                      Verwende generell keine scharfen Reiniger oder
-                      Öl-basierte Make-up Entferner
-                    </p>
-                  </div>
-
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                      Zurück
-                    </button>
-                  </div>
-                </div>
+              <div class="card-footer bg-transparent border-0 text-end">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#serviceNailsDetails"
+                >
+                  ...mehr
+                </button>
               </div>
-            </div>
-            <!-- end -->
-          </div>
-        </div>
 
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/sugaring.jpg" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Sugaring</h5>
-              <p class="card-text">
-                Sanfte Epilation mit Zuckerpaste von <b>Alexandria Professional</b>. Schonende Haarentfernung.
-                Eine Methode, die effektiv auf natürliche Basis, schmerzfreier
-                und langanhaltender als andere Techniken zu besten Ergebnissen
-                kommt.
-              </p>
-              <!-- Button trigger modal -->
-            </div>
-            <div class="card-footer bg-transparent border-0 text-end">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                data-bs-target="#serviceSugaringDetails">
-                ...mehr
-              </button>
-            </div>
+              <!-- Modal -->
+              <div class="modal fade" id="serviceNailsDetails" tabindex="-1">
+                <div class="modal-dialog modal-xl xmodal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Nageldesign</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <h2>Pflegehinweise</h2>
+                      <h3>NAILS</h3>
+                      <p>
+                        Bitte beachte folgende Empfehlungen. Diese haben sich in
+                        der Praxis bewährt und sind die Basis für schöne Hände
+                        und Nägel.
+                      </p>
+                      <ul>
+                        <li>
+                          Bitte denke daran, dass die Nägel für dich neu sind.
+                          Es werden ca. zwei bis drei Tage nötig sein, bis du
+                          dich an die neue Länge gewöhnt hast.
+                        </li>
 
+                        <li>
+                          Setze die Nägel niemals als Werkzeug ein, denn sie
+                          können brechen, im schlimmsten Fall auch der
+                          Naturnagel.
+                        </li>
 
-            <!-- Modal -->
-            <div class="modal fade" id="serviceSugaringDetails" tabindex="-1">
-              <div class="modal-dialog modal-xl xmodal-fullscreen">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Sugaring</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    Glatte, samtweiche Haut ohne ein einziges Härchen liegt im
-                    Trend. Profitieren auch Sie von der bewährten orientalischen
-                    Methode der Haarentfernung, dem Sugaring. Zuckern ist das
-                    Beauty-Geheimnis nicht nur für zauberhaft schöne
-                    Frauenbeine, sondern auch für einen makellos haarfreien
-                    Männerkörper. Andere Kulturen schätzten schon lange den
-                    unkomplizierten Einsatz der handwarmen Zuckerpaste. Diese
-                    ist bis heute ein 100% natürliches Produkt geblieben, mit
-                    dem sich alle Stellen Ihres Körpers einfach und gründlich
-                    enthaaren lassen. Ihr Vorteil beim Sugaring: Die Behandlung
-                    ist weniger schmerzhaft als beispielsweise bei einem
-                    Epilierer und hält dabei sehr lange vor. Gleichzeitig
-                    irritiert sich die Haut weniger und eignet sich auch für
-                    sensible Körperstellen wie Achsel- oder Intimbereich. Werden
-                    die Haare regelmäßig mit der Zuckerpaste entfernt, wachsen
-                    sie erst immer feiner und weniger. Sugaring ist eine Kunst,
-                    die gelernt sein will. Als Sugaring Expertin verfüge ich über
-                    reichhaltige Erfahrung. Natürlich können Sie sich vor Ihrer
-                    ersten Behandlung umfassend beraten lassen. Sie werden
-                    sehen, Sugaring ist hygienisch, langanhaltend und für jeden
-                    Hauttyp geeignet, auch für sehr empfindliche Haut. Ein
-                    weiterer Vorteil für Sie: Diese Methode der Enthaarung kommt
-                    völlig ohne Chemie aus.
-                    
-                    <div class="row">
-                      <div class="col-4"><img class="img-fluid" src="./img/sugaring/Werbung32a.jpg"></div>
-                      <div class="col-4">
-                        <video autoplay muted loop width="100%" height="100%" name="Sugaring">
-                          <source src="./img/sugaring/IMG_5178.MOV">
-                          Your browser does not support the video tag.
-                        </video>
-                      </div>
-                      <div class="col-4"><img class="img-fluid" src="./img/sugaring/Werbung32b.jpg"></div>                    
+                        <li>
+                          Je nach Wachstum und Beanspruchung deiner Nägel
+                          solltest du diese nach 3 - 4 Wochen auffüllen lassen.
+                        </li>
+
+                        <li>
+                          Trage deine Nägel nicht zu lang, wähle eine Länge, die
+                          zu deinem Lebensstil passt.
+                        </li>
+
+                        <li>
+                          Knipse oder schneide deine Fingernägel niemals selbst,
+                          das Material würde brechen. Feile deine Nägel mit
+                          einer Feile, die für Kunstnägel geeignet ist. Diese
+                          kannst du auch direkt bei mir erwerben.
+                        </li>
+
+                        <li>
+                          Trage Handschuhe bei Haus-, Putz- und Gartenarbeiten,
+                          um deine Nägel nicht durch scharfe Putzmittel zu
+                          gefährden oder Verfärbungen zu riskieren.
+                        </li>
+
+                        <li>
+                          Verwöhne deine Nägel täglich mit einem Tropfen
+                          Nagelöl, es pflegt die Nagelhaut und hält den Nagel
+                          und die Modellage elastisch. Verwende zur Handpflege
+                          ein hochwertiges Produkt.
+                        </li>
+
+                        <li>
+                          Wenn deine Gelnägel versiegelt wurden, kannst du sie
+                          zwar mit ganz normalem Nagellack lackieren, solltest
+                          aber bei der Entfernung des Lacks darauf achten, dass
+                          dieser acentonfrei ist.
+                        </li>
+
+                        <li>
+                          Entferne den Kunstnagel niemals gewaltsam, sonst reißt
+                          die obere Schicht deines Naturnagels aufgrund der
+                          festen Verbindung mit ab.
+                        </li>
+
+                        <li>
+                          Bitte creme die Hände am Tag der Modellage nicht ein
+                          und verwende auch kein Nagelöl.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Zurück
+                      </button>
                     </div>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                      Zurück
-                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/sugaring.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Sugaring</h5>
+                <p class="card-text">
+                  Sanfte Epilation mit Zuckerpaste von
+                  <b>Alexandria Professional</b>. Schonende Haarentfernung. Eine
+                  Methode, die effektiv auf natürliche Basis, schmerzfreier und
+                  langanhaltender als andere Techniken zu besten Ergebnissen
+                  kommt.
+                </p>
+                <!-- Button trigger modal -->
+              </div>
+              <div class="card-footer bg-transparent border-0 text-end">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#serviceSugaringDetails"
+                >
+                  ...mehr
+                </button>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="serviceSugaringDetails" tabindex="-1">
+                <div class="modal-dialog modal-xl xmodal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Sugaring</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Glatte, samtweiche Haut ohne ein einziges Härchen liegt im
+                      Trend. Profitieren auch Sie von der bewährten
+                      orientalischen Methode der Haarentfernung, dem Sugaring.
+                      Zuckern ist das Beauty-Geheimnis nicht nur für zauberhaft
+                      schöne Frauenbeine, sondern auch für einen makellos
+                      haarfreien Männerkörper. Andere Kulturen schätzten schon
+                      lange den unkomplizierten Einsatz der handwarmen
+                      Zuckerpaste. Diese ist bis heute ein 100% natürliches
+                      Produkt geblieben, mit dem sich alle Stellen Ihres Körpers
+                      einfach und gründlich enthaaren lassen. Ihr Vorteil beim
+                      Sugaring: Die Behandlung ist weniger schmerzhaft als
+                      beispielsweise bei einem Epilierer und hält dabei sehr
+                      lange vor. Gleichzeitig irritiert sich die Haut weniger
+                      und eignet sich auch für sensible Körperstellen wie
+                      Achsel- oder Intimbereich. Werden die Haare regelmäßig mit
+                      der Zuckerpaste entfernt, wachsen sie erst immer feiner
+                      und weniger. Sugaring ist eine Kunst, die gelernt sein
+                      will. Als Sugaring Expertin verfüge ich über reichhaltige
+                      Erfahrung. Natürlich können Sie sich vor Ihrer ersten
+                      Behandlung umfassend beraten lassen. Sie werden sehen,
+                      Sugaring ist hygienisch, langanhaltend und für jeden
+                      Hauttyp geeignet, auch für sehr empfindliche Haut. Ein
+                      weiterer Vorteil für Sie: Diese Methode der Enthaarung
+                      kommt völlig ohne Chemie aus.
+
+                      <div class="row">
+                        <div class="col-4">
+                          <img
+                            class="img-fluid"
+                            src="./img/sugaring/Werbung32a.jpg"
+                          />
+                        </div>
+                        <div class="col-4">
+                          <video
+                            autoplay
+                            muted
+                            loop
+                            width="100%"
+                            height="100%"
+                            name="Sugaring"
+                          >
+                            <source src="./img/sugaring/IMG_5178.MOV" />
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                        <div class="col-4">
+                          <img
+                            class="img-fluid"
+                            src="./img/sugaring/Werbung32b.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Zurück
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -439,248 +705,233 @@
           </div>
         </div>
 
-        <!--
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/service-wellness.jpg" class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Wellness</h5>
-              <p class="card-text">Enjoy your time, keep calm and relax</p>
+        <hr class="mt-3 mb-3" />
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <h2 class="card-title text-center">
+                <span class="material-icons" style="font-size: 500%"
+                  >card_giftcard</span
+                >
+              </h2>
+              <div class="card-body" style="margin-top: -1rem">
+                <h5 class="card-title text-center">GUTSCHEIN</h5>
+                <p class="card-text text-center">
+                  Beschenk deine Lieben mit einem Kosmetik-Gutschein
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        -->
-      </div>
 
-      <hr class="mt-3 mb-3" />
-
-
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-
-        <div class="col">
-          <div class="card h-100">
-            <h2 class="card-title text-center">
-              <span class="material-icons" style="font-size: 500%">card_giftcard</span>
-            </h2>
-            <div class="card-body" style="margin-top: -1rem">
-              <h5 class="card-title text-center">GUTSCHEIN</h5>
-              <p class="card-text text-center">
-                Beschenk deine Lieben mit einem Kosmetik-Gutschein
-              </p>
+          <div class="col">
+            <div class="card h-100">
+              <h2 class="card-title text-center">
+                <span class="material-icons" style="font-size: 500%">
+                  emoji_events
+                </span>
+              </h2>
+              <div class="card-body" style="margin-top: -1rem">
+                <h5 class="card-title text-center">QUALITÄTSPRODUKTE</h5>
+                <p class="card-text text-center">
+                  Ich benutze ausschließlich Markenprodukte
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-
-
-        <div class="col">
-          <div class="card h-100">
-            <h2 class="card-title text-center">
-              <span class="material-icons" style="font-size: 500%">
-                emoji_events
-              </span>
-            </h2>
-            <div class="card-body" style="margin-top: -1rem">
-              <h5 class="card-title text-center">QUALITÄTSPRODUKTE</h5>
-              <p class="card-text text-center">
-                Ich benutze ausschließlich Markenprodukte
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <h2 class="card-title text-center">
-              <span class="material-icons" style="font-size: 500%">
-                euro
-              </span>
-            </h2>
-            <div class="card-body" style="margin-top: -1rem">
-              <h5 class="card-title text-center">TREUEKARTE</h5>
-              <p class="card-text text-center">
-                Sichere dir 20% bei der 10. Behandlung
-              </p>
+          <div class="col">
+            <div class="card h-100">
+              <h2 class="card-title text-center">
+                <span class="material-icons" style="font-size: 500%">
+                  euro
+                </span>
+              </h2>
+              <div class="card-body" style="margin-top: -1rem">
+                <h5 class="card-title text-center">TREUEKARTE</h5>
+                <p class="card-text text-center">
+                  Sichere dir 20% bei der 10. Behandlung
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <div class="bgimg-2"></div>
 
-  <div class="bgimg-2"></div>
+    <!-- preise -->
+    <section id="preise" class="pt-5">
+      <div class="container pt-4">
+        <h1>Preise</h1>
 
-
-  <!-- preise -->
-  <section id="preise" class="pt-5">
-    <div class="container pt-4">
-      <h1>Preise</h1>
-
-      <div class="row g-5">
-        <div class="col-sm-6">
-          <table class="table caption-top">
-            <caption>
-              Nägel
-            </caption>
-            <tbody>
-              <tr>
-                <td>Neumodellage mit Schablone</td>
-                <td class="text-end text-nowrap">65 EUR</td>
-              </tr>
-              <!--
+        <div class="row g-5">
+          <div class="col-sm-6">
+            <table class="table caption-top">
+              <caption>
+                Nägel
+              </caption>
+              <tbody>
+                <tr>
+                  <td>Neumodellage mit Schablone</td>
+                  <td class="text-end text-nowrap">65 EUR</td>
+                </tr>
+                <!--
               <tr>
                 <td>Hochzeitsnägel</td>
                 <td class="text-end text-nowrap">65 EUR</td>
               </tr>
               -->
-              <tr>
-                <td>Auffüllen (nur Gel)</td>
-                <td class="text-end text-nowrap">45 EUR</td>
-              </tr>
-              <tr>
-                <td>Reparatur pro Nagel / Extratermin</td>
-                <td class="text-end text-nowrap">5 EUR</td>
-              </tr>
-              <tr>
-                <td>Überlänge Aufpreis</td>
-                <td class="text-end text-nowrap">5 EUR</td>
-              </tr>
-              <tr>
-                <td>Entfernen der Modellage</td>
-                <td class="text-end text-nowrap">20 EUR</td>
-              </tr>
-              <tr>
-                <td>Maniküre</td>
-                <td class="text-end text-nowrap">25 EUR</td>
-              </tr>
-              <tr>
-                <td>Maniküre mit Lack</td>
-                <td class="text-end text-nowrap">30 EUR</td>
-              </tr>
-              <tr>
-                <td>Nagellack ablackieren</td>
-                <td class="text-end text-nowrap">5 EUR</td>
-              </tr>
-              <tr>
-                <td>Maniküre mit Shellac</td>
-                <td class="text-end text-nowrap">35 EUR</td>
-              </tr>
-              <tr>
-                <td>Füße lackieren</td>
-                <td class="text-end text-nowrap">15 EUR</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                <tr>
+                  <td>Auffüllen (nur Gel)</td>
+                  <td class="text-end text-nowrap">45 EUR</td>
+                </tr>
+                <tr>
+                  <td>Reparatur pro Nagel / Extratermin</td>
+                  <td class="text-end text-nowrap">5 EUR</td>
+                </tr>
+                <tr>
+                  <td>Überlänge Aufpreis</td>
+                  <td class="text-end text-nowrap">5 EUR</td>
+                </tr>
+                <tr>
+                  <td>Entfernen der Modellage</td>
+                  <td class="text-end text-nowrap">20 EUR</td>
+                </tr>
+                <tr>
+                  <td>Maniküre</td>
+                  <td class="text-end text-nowrap">25 EUR</td>
+                </tr>
+                <tr>
+                  <td>Maniküre mit Lack</td>
+                  <td class="text-end text-nowrap">30 EUR</td>
+                </tr>
+                <tr>
+                  <td>Nagellack ablackieren</td>
+                  <td class="text-end text-nowrap">5 EUR</td>
+                </tr>
+                <tr>
+                  <td>Maniküre mit Shellac</td>
+                  <td class="text-end text-nowrap">35 EUR</td>
+                </tr>
+                <tr>
+                  <td>Füße lackieren</td>
+                  <td class="text-end text-nowrap">15 EUR</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-        <div class="col-sm-6">
-          <table class="table caption-top">
-            <caption>
-              Wimpern<small> & </small>Augenbrauen
-            </caption>
-            <tbody>
-              <tr>
-                <td>Lashlifting ohne Farbe</td>
-                <td class="text-end text-nowrap">56 EUR</td>
-              </tr>
-              <tr>
-                <td>Lashlifting inkl. Färben</td>
-                <td class="text-end text-nowrap">60 EUR</td>
-              </tr>
-              <tr>
-                <td>Browlifting ohne Farbe</td>
-                <td class="text-end text-nowrap">52 EUR</td>
-              </tr>
-              <tr>
-                <td>Browlifting inkl. Färben</td>
-                <td class="text-end text-nowrap">56 EUR</td>
-              </tr>
-              <tr>
-                <td>Lashlifting und Browlifting (inkl. Färben)</td>
-                <td class="text-end text-nowrap">99 EUR</td>
-              </tr>
-              <tr>
-                <td>Augenbrauen zupfen</td>
-                <td class="text-end text-nowrap">ab 10 EUR</td>
-              </tr>
-              <tr>
-                <td>Augenbrauen färben</td>
-                <td class="text-end text-nowrap">15 EUR</td>
-              </tr>
-              <tr>
-                <td>Wimpern färben</td>
-                <td class="text-end text-nowrap">15 EUR</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+          <div class="col-sm-6">
+            <table class="table caption-top">
+              <caption>
+                Wimpern<small> & </small
+                >Augenbrauen
+              </caption>
+              <tbody>
+                <tr>
+                  <td>Lashlifting ohne Farbe</td>
+                  <td class="text-end text-nowrap">56 EUR</td>
+                </tr>
+                <tr>
+                  <td>Lashlifting inkl. Färben</td>
+                  <td class="text-end text-nowrap">60 EUR</td>
+                </tr>
+                <tr>
+                  <td>Browlifting ohne Farbe</td>
+                  <td class="text-end text-nowrap">52 EUR</td>
+                </tr>
+                <tr>
+                  <td>Browlifting inkl. Färben</td>
+                  <td class="text-end text-nowrap">56 EUR</td>
+                </tr>
+                <tr>
+                  <td>Lashlifting und Browlifting (inkl. Färben)</td>
+                  <td class="text-end text-nowrap">99 EUR</td>
+                </tr>
+                <tr>
+                  <td>Augenbrauen zupfen</td>
+                  <td class="text-end text-nowrap">ab 10 EUR</td>
+                </tr>
+                <tr>
+                  <td>Augenbrauen färben</td>
+                  <td class="text-end text-nowrap">15 EUR</td>
+                </tr>
+                <tr>
+                  <td>Wimpern färben</td>
+                  <td class="text-end text-nowrap">15 EUR</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-        <div class="col-sm-6">
-          <table class="table caption-top">
-            <caption>
-              Sugaring
-            </caption>
-            <tbody>
-              <tr>
-                <td>Untere Beine</td>
-                <td class="text-end text-nowrap">35 EUR</td>
-              </tr>
-              <tr>
-                <td>Beine komplett</td>
-                <td class="text-end text-nowrap">60 EUR</td>
-              </tr>
-              <tr>
-                <td>Zehen</td>
-                <td class="text-end text-nowrap">8 EUR</td>
-              </tr>
-              <tr>
-                <td>Finger</td>
-                <td class="text-end text-nowrap">8 EUR</td>
-              </tr>
-              <tr>
-                <td>Unterarme</td>
-                <td class="text-end text-nowrap">35 EUR</td>
-              </tr>
-              <tr>
-                <td>Arme komplett</td>
-                <td class="text-end text-nowrap">45 EUR</td>
-              </tr>
-              <tr>
-                <td>Achseln</td>
-                <td class="text-end text-nowrap">20 EUR</td>
-              </tr>
-              <tr>
-                <td>Schultern</td>
-                <td class="text-end text-nowrap">25 EUR</td>
-              </tr>
-              <tr>
-                <td>Rücken</td>
-                <td class="text-end text-nowrap">59 EUR</td>
-              </tr>
-              <tr>
-                <td>Bikinizone</td>
-                <td class="text-end text-nowrap">19 EUR</td>
-              </tr>
-              <tr>
-                <td>Intimbereich</td>
-                <td class="text-end text-nowrap">30 EUR</td>
-              </tr>
-              <tr>
-                <td>Po-Backen</td>
-                <td class="text-end text-nowrap">25 EUR</td>
-              </tr>
-              <tr>
-                <td>Gesicht komplett</td>
-                <td class="text-end text-nowrap">25 EUR</td>
-              </tr>
-              <tr>
-                <td>Oberlippe und Kinn</td>
-                <td class="text-end text-nowrap">20 EUR</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+          <div class="col-sm-6">
+            <table class="table caption-top">
+              <caption>
+                Sugaring
+              </caption>
+              <tbody>
+                <tr>
+                  <td>Untere Beine</td>
+                  <td class="text-end text-nowrap">35 EUR</td>
+                </tr>
+                <tr>
+                  <td>Beine komplett</td>
+                  <td class="text-end text-nowrap">60 EUR</td>
+                </tr>
+                <tr>
+                  <td>Zehen</td>
+                  <td class="text-end text-nowrap">8 EUR</td>
+                </tr>
+                <tr>
+                  <td>Finger</td>
+                  <td class="text-end text-nowrap">8 EUR</td>
+                </tr>
+                <tr>
+                  <td>Unterarme</td>
+                  <td class="text-end text-nowrap">35 EUR</td>
+                </tr>
+                <tr>
+                  <td>Arme komplett</td>
+                  <td class="text-end text-nowrap">45 EUR</td>
+                </tr>
+                <tr>
+                  <td>Achseln</td>
+                  <td class="text-end text-nowrap">20 EUR</td>
+                </tr>
+                <tr>
+                  <td>Schultern</td>
+                  <td class="text-end text-nowrap">25 EUR</td>
+                </tr>
+                <tr>
+                  <td>Rücken</td>
+                  <td class="text-end text-nowrap">59 EUR</td>
+                </tr>
+                <tr>
+                  <td>Bikinizone</td>
+                  <td class="text-end text-nowrap">19 EUR</td>
+                </tr>
+                <tr>
+                  <td>Intimbereich</td>
+                  <td class="text-end text-nowrap">30 EUR</td>
+                </tr>
+                <tr>
+                  <td>Po-Backen</td>
+                  <td class="text-end text-nowrap">25 EUR</td>
+                </tr>
+                <tr>
+                  <td>Gesicht komplett</td>
+                  <td class="text-end text-nowrap">25 EUR</td>
+                </tr>
+                <tr>
+                  <td>Oberlippe und Kinn</td>
+                  <td class="text-end text-nowrap">20 EUR</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-        <!--
+          <!--
         <div class="col-sm-6">
           <table class="table caption-top">
             <caption>
@@ -698,29 +949,28 @@
             </tbody>
           </table>
         </div>
-        -->
+        --></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="bgimg-3">
-  </div>
+    <div class="bgimg-3"></div>
 
+    <!-- Aktuelles -->
+    <section id="news" class="pt-5">
+      <div class="container pt-4 pb-5">
+        <h1>Aktuelles</h1>
 
-  <!-- Aktuelles -->
-  <section id="news" class="pt-5">
-    <div class="container pt-4 pb-5">
-      <h1>Aktuelles</h1>
+        <ul>
+          <li>
+            Momentan mache ich neben dem normalen Studio-Betrieb eine
+            Weiterbildung bei der
+            <a href="https://phi-academy.com/" target="_blank">Phi-Academie</a>
+            zur <b>Micro-Blading Artistin</b>
+          </li>
+        </ul>
 
-      <ul>
-        <li>
-          Momentan mache ich neben dem normalen Studio-Betrieb eine Weiterbildung 
-          bei der <a href="https://phi-academy.com/" target="_blank">Phi-Academie</a> zur <b>Micro-Blading Artistin</b>          
-        </li>
-      </ul>
-
-      <h3 class="mt-5">Wichtig</h3>
-      <!--
+        <h3 class="mt-5">Wichtig</h3>
+        <!--
       <ul>
         <li>
           Ab 23.08.2021 gilt die 3G-Regelung für alle Kunden. Behandlungen nur für Geimpfte, Genesene
@@ -730,7 +980,7 @@
           zu tragen.
         </li>
         -->
-        
+
         <!--
         <li>
           Wichtig vor deinem Termin: <br />
@@ -755,65 +1005,73 @@
         </li>
       </ul>
       -->
-      <p>
-        Ich bitte dich dringend darum, einen Termin, den du nicht einhalten kannst, spätestens 24 Stunden
-        vorher abzusagen.
-      </p>
-      <!--
+        <p>
+          Ich bitte dich dringend darum, einen Termin, den du nicht einhalten
+          kannst, spätestens 24 Stunden vorher abzusagen.
+        </p>
+        <!--
       <p>
         Danke für dein Verständnis und deine Mithilfe bei der Umsetzung aller Vorgaben zur
         Einhaltung der geltenden Hygienemaßnahmen.
       </p>
       -->
 
-      <h3 class="mt-5">Downloads</h3>
-      <a href="files/Einverstaendniserklaerung_fuer_Minderjaehrige-Nageldesign.pdf"
-        target="_blank">Einverständniserklärung für
-        Minderjährige - Nageldesign</a><br>
-      <a href="files/Einverstaendniserklaerung_fuer_Minderjaehrige-Wimpern.pdf" target="_blank">Einverständniserklärung
-        für
-        Minderjährige - Wimpern</a>
-    </div>
-  </section>
-
-  <div XXclass="bgimg-1">
-    <div class="caption"></div>
-  </div>
-
-  <!-- about-->
-  <section id="about" class="pt-5 pb-5">
-    <div class="container pt-4">
-      <h1 class="caro-font">Übers <span style="white-space: nowrap;">Studio 8</span> und über mich...</h1>
-      <div class="row">
-        <div class="col-sm-12 col-lg-4">
-          <img src="img/caro-black.jpg" style="width: 300px; height: auto;">
-        </div>
-        <div class="col">
-
-          <p>
-            Hallo, mein Name ist Caro. Seit 2019 wohne ich in dem kleinen, schönen Nassach
-            (auch bekannt als fränkische Toskana). Meine Adresse war auch beteiligt an der
-            Namensgebung meines Studios: Distler 8 -> Studio 8 😊.<br>
-            <br>
-            Mit Kosmetik und im speziellen mit Nail Design, Lash- und Browlifting
-            (früher bekannt als Wimpernwelle) beschäftige ich mich bereits seit meiner Jugend.
-            Damals träumte ich von meinem eigenen Studio – ein Studio, in dem ich mich verwirklichen
-            und Kunden mit Kosmetikprodukten meiner Wahl glücklich machen kann.<br>
-            <br>
-            Als Stylistin bin ich eine Quereinsteigerin. Um allerdings meinen eigenen professionellen
-            Ansprüchen gerecht zu werden, besuche ich kontinuierlich Weiterbildungen und Schulungen. <br>
-            <br>
-            Die Zufriedenheit meiner Kunden, denen ich hier eine Auszeit aus dem oft hektischen
-            Alltag und damit eine kleine Oase der Ruhe biete, ist meine größte Motivation.<br>
-            <br>
-            Ich freu mich auf Dich! <br>
-            Deine Caro
-
-          </p>
-        </div>
-
+        <h3 class="mt-5">Downloads</h3>
+        <a
+          href="files/Einverstaendniserklaerung_fuer_Minderjaehrige-Nageldesign.pdf"
+          target="_blank"
+          >Einverständniserklärung für Minderjährige - Nageldesign</a
+        ><br />
+        <a
+          href="files/Einverstaendniserklaerung_fuer_Minderjaehrige-Wimpern.pdf"
+          target="_blank"
+          >Einverständniserklärung für Minderjährige - Wimpern</a
+        >
       </div>
-      <!--
+    </section>
+
+    <div XXclass="bgimg-1">
+      <div class="caption"></div>
+    </div>
+
+    <!-- about-->
+    <section id="about" class="pt-5 pb-5">
+      <div class="container pt-4">
+        <h1 class="caro-font">
+          Übers <span style="white-space: nowrap">Studio 8</span> und über
+          mich...
+        </h1>
+        <div class="row">
+          <div class="col-sm-12 col-lg-4">
+            <img src="img/caro-black.jpg" style="width: 300px; height: auto" />
+          </div>
+          <div class="col">
+            <p>
+              Hallo, mein Name ist Caro. Seit 2019 wohne ich in dem kleinen,
+              schönen Nassach (auch bekannt als fränkische Toskana). Meine
+              Adresse war auch beteiligt an der Namensgebung meines Studios:
+              Distler 8 -> Studio 8 😊.<br />
+              <br />
+              Mit Kosmetik und im speziellen mit Nail Design, Lash- und
+              Browlifting (früher bekannt als Wimpernwelle) beschäftige ich mich
+              bereits seit meiner Jugend. Damals träumte ich von meinem eigenen
+              Studio – ein Studio, in dem ich mich verwirklichen und Kunden mit
+              Kosmetikprodukten meiner Wahl glücklich machen kann.<br />
+              <br />
+              Als Stylistin bin ich eine Quereinsteigerin. Um allerdings meinen
+              eigenen professionellen Ansprüchen gerecht zu werden, besuche ich
+              kontinuierlich Weiterbildungen und Schulungen. <br />
+              <br />
+              Die Zufriedenheit meiner Kunden, denen ich hier eine Auszeit aus
+              dem oft hektischen Alltag und damit eine kleine Oase der Ruhe
+              biete, ist meine größte Motivation.<br />
+              <br />
+              Ich freu mich auf Dich! <br />
+              Deine Caro
+            </p>
+          </div>
+        </div>
+        <!--
       <hr>
       <h1 class="caro-font">Übers <span style="white-space: nowrap;">Studio 8</span> und über mich...</h1>
       <p>
@@ -827,381 +1085,449 @@
         oft hektischen Altag und damit eine kleine Oase der Ruhe biete, ist
         meine größte Motivation.
       </p>
-    </div>
-    -->
-  </section>
+      --></div>
+    </section>
 
-  <!-- contact -->
-  <section id="kontakt" class="pt-5">
-    <div class="container pt-4">
-      <h1>Kontakt</h1>
-      <p class="mt-4">
-        Terminvereinbarung telefonisch unter <a href="tel:+4915752965879">+49.157.52965879</a>
-        oder per <a href="https://wa.me/+4915752965879">WhatsApp</a>.    
-      </p>
-      <p>
-        Termine bitte nur nach Absprache!
-      </p>
-      <p class="h4 mt-3">So geht's zum Studio!</p>
-      Mein Kosmetikstudio ist in Nassach zwischen Hofheim i. Ufr. und
-      Stadtlauringen. Gib in dein Navi einfach folgende Andresse ein:
-      <address class="mt-1 ml-5">
-        <b>Studio 8</b><br />
-        Distler 8<br />
-        97491 Aidhausen / Nassach
-      </address>
-    </div>
-    <!-- Google map-->
-    <div id="map"></div>
-  </section>
-
-  <footer class="container-fluid text-white bg-sitemap pt-5" id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h3>Studio 8</h3>
-          <ul>
-            <li>Nageldesign</li>
-            <li>Wimpern</li>
-            <li>Sugaring</li>
-            <!--<li>Wellness</li>-->
-          </ul>
-        </div>
-        <div class="col">
-          <h3>Kontakt</h3>
-          <dl class="contact-list">
-            <dt>Adresse:</dt>
-            <dd>Distler 8, 97491 Nassach</dd>
-          </dl>
-          <dl class="contact-list">
-            <dt>E-Mail:</dt>
-            <dd>
-              <a href="mailto:carola.erb@outlook.com">carola.erb(at)outlook.com</a>
-            </dd>
-          </dl>
-          <dl class="contact-list">
-            <dt>Telefon:</dt>
-            <dd>
-              <a href="tel:+4915752965879">+49.157.52965879</a>
-            </dd>
-          </dl>
-        </div>
-        <div class="col">
-          <h3>Links</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#preise">Preise</a></li>
-            <li><a href="#news">Aktuelles</a></li>
-            <li><a href="#about">Übers Studio 8</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-            <li class="mt-3"><a target="_blank" href="https://www.bildwerk-hassfurt.de/">Bildwerk Haßfurt</a></li>
-            <li><a href="https://www.ferienhaus-hassgautor.de/">Ferienhaus Haßgautor</a></li>
-          </ul>
-        </div>
+    <!-- contact -->
+    <section id="kontakt" class="pt-5">
+      <div class="container pt-4">
+        <h1>Kontakt</h1>
+        <p class="mt-4">
+          Terminvereinbarung telefonisch unter
+          <a href="tel:+4915752965879">+49.157.52965879</a> oder per
+          <a href="https://wa.me/+4915752965879">WhatsApp</a>.
+        </p>
+        <p>Termine bitte nur nach Absprache!</p>
+        <p class="h4 mt-3">So geht's zum Studio!</p>
+        Mein Kosmetikstudio ist in Nassach zwischen Hofheim i. Ufr. und
+        Stadtlauringen. Gib in dein Navi einfach folgende Andresse ein:
+        <address class="mt-1 ml-5">
+          <b>Studio 8</b><br />
+          Distler 8<br />
+          97491 Aidhausen / Nassach
+        </address>
       </div>
-      <hr />
-      <div class="row">
-        <div class="col">
-          <p class="float-right"><a href="#">Back to top</a></p>
-          <p>
-            © 2021 Studio 8 -
-            <button type="button" class="btn btn-link text-white mb-2" data-bs-toggle="modal"
-              data-bs-target="#impresumModal">
-              Impressum / AGB
-            </button>
+      <!-- Google map-->
+      <div id="map"></div>
+    </section>
 
-          </p>
-        </div>
-      </div>
-
-      <div class="row" id="social-media-footer">
-        <div class="row no-gutters social-container">
+    <footer class="container-fluid text-white bg-sitemap pt-5" id="footer">
+      <div class="container">
+        <div class="row">
           <div class="col">
-            <a class="social-inner" target="_blank" href="https://www.facebook.com/carola.erb.5"><span
-                class="icon mdi mdi-facebook"></span><span>Facebook</span></a>
+            <h3>Studio 8</h3>
+            <ul>
+              <li>Nageldesign</li>
+              <li>Wimpern</li>
+              <li>Sugaring</li>
+              <!--<li>Wellness</li>-->
+            </ul>
           </div>
           <div class="col">
-            <a class="social-inner" target="_blank" href="https://www.instagram.com/studio8.kosmetik/"><span
-                class="icon mdi mdi-instagram"></span><span>instagram</span></a>
+            <h3>Kontakt</h3>
+            <dl class="contact-list">
+              <dt>Adresse:</dt>
+              <dd>Distler 8, 97491 Nassach</dd>
+            </dl>
+            <dl class="contact-list">
+              <dt>E-Mail:</dt>
+              <dd>
+                <a href="mailto:carola.erb@outlook.com"
+                  >carola.erb(at)outlook.com</a
+                >
+              </dd>
+            </dl>
+            <dl class="contact-list">
+              <dt>Telefon:</dt>
+              <dd>
+                <a href="tel:+4915752965879">+49.157.52965879</a>
+              </dd>
+            </dl>
+          </div>
+          <div class="col">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#preise">Preise</a></li>
+              <li><a href="#news">Aktuelles</a></li>
+              <li><a href="#about">Übers Studio 8</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+              <li class="mt-3">
+                <a target="_blank" href="https://www.bildwerk-hassfurt.de/"
+                  >Bildwerk Haßfurt</a
+                >
+              </li>
+              <li>
+                <a href="https://www.ferienhaus-hassgautor.de/"
+                  >Ferienhaus Haßgautor</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>
+              © 2021 Studio 8 -
+              <button
+                type="button"
+                class="btn btn-link text-white mb-2"
+                data-bs-toggle="modal"
+                data-bs-target="#impresumModal"
+              >
+                Impressum / AGB
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <div class="row" id="social-media-footer">
+          <div class="row no-gutters social-container">
+            <div class="col">
+              <a
+                class="social-inner"
+                target="_blank"
+                href="https://www.facebook.com/carola.erb.5"
+                ><span class="icon mdi mdi-facebook"></span
+                ><span>Facebook</span></a
+              >
+            </div>
+            <div class="col">
+              <a
+                class="social-inner"
+                target="_blank"
+                href="https://www.instagram.com/studio8.kosmetik/"
+                ><span class="icon mdi mdi-instagram"></span
+                ><span>instagram</span></a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="impresumModal" tabindex="-1">
-      <div class="modal-dialog modal-xl xmodal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Impressum</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h1>Impressum / AGB</h1>
-            <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
-            <p>Carola Erb<br />
-              Distler 8<br />
-              97491 Aidhausen</p>
+      <!-- Modal -->
+      <div class="modal fade" id="impresumModal" tabindex="-1">
+        <div class="modal-dialog modal-xl xmodal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Impressum</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h1>Impressum / AGB</h1>
+              <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+              <p>
+                Carola Erb<br />
+                Distler 8<br />
+                97491 Aidhausen
+              </p>
 
-            <h2>Kontakt</h2>
-            <p>Telefon: +49.157.52965879<br />
-              E-Mail: carola.erb@outlook.com</p>
+              <h2>Kontakt</h2>
+              <p>
+                Telefon: +49.157.52965879<br />
+                E-Mail: carola.erb@outlook.com
+              </p>
 
-            <h2>Redaktionell verantwortlich</h2>
-            <p>Carola Erb<br />
-              Distler 8<br />
-              97491 Aidhausen</p>
+              <h2>Redaktionell verantwortlich</h2>
+              <p>
+                Carola Erb<br />
+                Distler 8<br />
+                97491 Aidhausen
+              </p>
 
+              <h2>Haftungsausschluss (Disclaimer)</h2>
 
-            <h2>Haftungsausschluss (Disclaimer)</h2>
+              <h3>Haftung für Inhalte</h3>
+              <p>
+                Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene
+                Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
+                verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
+                Diensteanbieter jedoch nicht verpflichtet, übermittelte oder
+                gespeicherte fremde Informationen zu überwachen oder nach
+                Umständen zu forschen, die auf eine rechtswidrige Tätigkeit
+                hinweisen. Verpflichtungen zur Entfernung oder Sperrung der
+                Nutzung von Informationen nach den allgemeinen Gesetzen bleiben
+                hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst
+                ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung
+                möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen
+                werden wir diese Inhalte umgehend entfernen.
+              </p>
 
-            <h3>Haftung für Inhalte</h3>
-            <p>
-              Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen
-              Gesetzen
-              verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte
-              oder
-              gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine
-              rechtswidrige
-              Tätigkeit hinweisen.
+              <h3>Haftung für Links</h3>
+              <p>
+                Unser Angebot enthält Links zu externen Webseiten Dritter, auf
+                deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
+                diese fremden Inhalte auch keine Gewähr übernehmen. Für die
+                Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
+                oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten
+                wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße
+                überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der
+                Verlinkung nicht erkennbar. Eine permanente inhaltliche
+                Kontrolle der verlinkten Seiten ist jedoch ohne konkrete
+                Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
+                Bekanntwerden von Rechtsverletzungen werden wir derartige Links
+                umgehend entfernen.
+              </p>
 
-              Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen
-              bleiben
-              hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer
-              konkreten
-              Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte
-              umgehend
-              entfernen.
-            </p>
+              <hr />
 
-            <h3>Haftung für Links</h3>
-            <p>
-              Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben.
-              Deshalb
-              können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten
-              ist stets
-              der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum
-              Zeitpunkt der
-              Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung
-              nicht
-              erkennbar.
+              <h1>AGB - Allgemeine Geschäftsbedingungen</h1>
+              <p>
+                <b>§ 1 Allgemeines, Geltungsbereich</b><br />
+                1. Die vorliegenden Allgemeinen Geschäftsbedingungen (AGB)
+                gelten für all meine Geschäftsbeziehungen mit meinen Kunden.<br />
+                2. Meine AGB gelten ausschließlich. Abweichende,
+                entgegenstehende oder ergänzende AGB des Kunden werden nur dann
+                und insoweit Vertragsbestandteil, als ich ihrer Geltung
+                ausdrücklich schriftlich zugestimmt habe.<br />
+              </p>
 
-              Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer
-              Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links
-              umgehend
-              entfernen.
-            </p>
+              <p>
+                <b>§ 2 Angebote</b><br />
+                1. Meine Angebote sind freibleibend und unverbindlich.
+              </p>
+              <p>
+                <b>§ 3 Terminvergabe, Behandlungen</b> <br />
 
-            <hr>
+                1. Behandelt werden auf eigenen Wunsch und nach terminlicher
+                Vereinbarung alle geschäftsfähigen Personen ab 18 Jahren. Bei
+                Personen unter 18 Jahren ist eine Zustimmung des gesetzlichen
+                Vertreters erforderlich.
+                <br />
+                2. Vereinbarte Termine sind eine beiderseitige Willenserklärung
+                und für beide Parteien bindend.
+                <br />
+                3. Die Behandlungsdauer ist meinem Angebot auf meiner Website zu
+                entnehmen. Der Umfang der Behandlung richtet sich nach der
+                vorherigen und individuellen Absprache und dem Hautzustand. Ich
+                gebe Behandlungsempfehlungen, die Entscheidung über die Art der
+                Behandlung trifft der Kunde. Die Behandlung wird nach vorheriger
+                Hautdiagnose und der Behandlungsempfehlung sach- und fachgerecht
+                vorgenommen.
+                <br />
+                4. Kann aus für mich nicht zu vertretenden Gründen oder höherer
+                Gewalt ein Termin von mir nicht eingehalten werden, wird der
+                Kunde umgehend in Kenntnis gesetzt, sofern die hinterlegten
+                Adress- und Kontaktdaten eine zeitnahe Kontaktaufnahme
+                ermöglichen. Ich bin in dem Fall berechtigt, den Termin
+                kurzfristig zu verschieben oder vom Vertrag zurückzutreten.
+                Meine gesetzlichen Rücktritts- und Kündigungsrechte bleiben
+                unberührt.
+              </p>
+              <p>
+                <b>§ 4 Terminverzug durch den Kunden</b> <br />
 
-            <h1>AGB - Allgemeine Geschäftsbedingungen</h1>
-            <p>
-              <b>§ 1 Allgemeines, Geltungsbereich</b><br>
-              1. Die vorliegenden Allgemeinen Geschäftsbedingungen (AGB) gelten für all meine Geschäftsbeziehungen mit
-              meinen Kunden.<br>
-              2. Meine AGB gelten ausschließlich. Abweichende, entgegenstehende oder ergänzende AGB des Kunden werden
-              nur dann und insoweit Vertragsbestandteil, als ich ihrer Geltung ausdrücklich schriftlich zugestimmt
-              habe.<br>
-            </p>
+                1. Termine sind, gleich aus welchen Gründen, mindestens 24
+                Stunden vorher abzusagen. Im Falle einer nicht fristgerechten
+                Absage eines Termins gilt folgendes:
+                <br />
+                a) Bei Absagen innerhalb von 24 Stunden vor dem vereinbarten
+                Behandlungstermin bleibt die Verpflichtung zur Zahlung von 50%
+                des Preises der gebuchten Leistung bestehen.
+                <br />
+                b) Erscheint der Kunde nicht zum vereinbarten Behandlungstermin
+                und sagt diesen Termin auch nicht mindestens 24 Stunden vorher
+                ab, bin ich berechtigt, dem Kunden den nicht rechtzeitig
+                abgesagten Termin gemäß § 615 BGB in Rechnung zu stellen. Ein
+                Anspruch auf Ersatzleistung seitens des Kunden besteht nicht.
+                <br />
+                2. Die Behandlung beginnt mit dem Eintreffen des Kunden im
+                Studio. Bei verspätetem Eintreffen besteht ein Anspruch auf
+                Behandlung nur während der vereinbarten Behandlungsdauer. Ich
+                bin zudem berechtigt, die volle Behandlungszeit zu berechnen,
+                wenn die Behandlungsdauer aufgrund eines nachfolgenden Termins
+                pünktlich beendet werden muss.
+              </p>
 
-            <p>
-              <b>§ 2 Angebote</b><br>
-              1. Meine Angebote sind freibleibend und unverbindlich.
-            </p>
-            <p><b>§ 3 Terminvergabe, Behandlungen</b> <br>
+              <p>
+                <b>§ 5 Preise und Zahlungsbedingungen</b><br />
 
-              1. Behandelt werden auf eigenen Wunsch und nach terminlicher Vereinbarung alle geschäftsfähigen Personen
-              ab
-              18 Jahren. Bei Personen unter 18 Jahren ist eine Zustimmung des gesetzlichen Vertreters erforderlich.
-              <br>
-              2. Vereinbarte Termine sind eine beiderseitige Willenserklärung und für beide Parteien bindend.
-              <br>
-              3. Die Behandlungsdauer ist meinem Angebot auf meiner Website zu entnehmen. Der Umfang der Behandlung
-              richtet sich nach der vorherigen und individuellen Absprache und dem Hautzustand. Ich gebe
-              Behandlungsempfehlungen, die Entscheidung über die Art der Behandlung trifft der Kunde. Die Behandlung
-              wird
-              nach vorheriger Hautdiagnose und der Behandlungsempfehlung sach- und fachgerecht vorgenommen.
-              <br>
-              4. Kann aus für mich nicht zu vertretenden Gründen oder höherer Gewalt ein Termin von mir nicht
-              eingehalten
-              werden, wird der Kunde umgehend in Kenntnis gesetzt, sofern die hinterlegten Adress- und Kontaktdaten eine
-              zeitnahe Kontaktaufnahme ermöglichen. Ich bin in dem Fall berechtigt, den Termin kurzfristig zu
-              verschieben
-              oder vom Vertrag zurückzutreten. Meine gesetzlichen Rücktritts- und Kündigungsrechte bleiben unberührt.
-            </p>
-            <p>
-              <b>§ 4 Terminverzug durch den Kunden</b> <br>
+                1. Sofern im Einzelfall nichts anderes vereinbart ist, gilt
+                meine jeweils zum Zeitpunkt des Vertragsschlusses aktuelle
+                Preisliste auf meiner Website.
+                <br />
+                2. Die Zahlungen für die Behandlung und/oder des Kaufpreises
+                sind nach der Behandlung bzw. bei Übergabe der Verkaufsware
+                sofort in bar oder per Überweisung fällig. Bei Verkäufen von
+                Gutscheinen gilt dies entsprechend.
+                <br />
+                3. In begründeten Fällen können Termine nur nach entsprechender
+                Vorauszahlung angenommen werden.
+              </p>
 
-              1. Termine sind, gleich aus welchen Gründen, mindestens 24 Stunden vorher abzusagen. Im Falle einer nicht
-              fristgerechten Absage eines Termins gilt folgendes:
-              <br>
-              a) Bei Absagen innerhalb von 24 Stunden vor dem vereinbarten Behandlungstermin bleibt die Verpflichtung
-              zur
-              Zahlung von 50% des Preises der gebuchten Leistung bestehen.
-              <br>
-              b) Erscheint der Kunde nicht zum vereinbarten Behandlungstermin und sagt diesen Termin auch nicht
-              mindestens
-              24 Stunden vorher ab, bin ich berechtigt, dem Kunden den nicht rechtzeitig abgesagten Termin gemäß § 615
-              BGB
-              in Rechnung zu stellen. Ein Anspruch auf Ersatzleistung seitens des Kunden besteht nicht.
-              <br>
-              2. Die Behandlung beginnt mit dem Eintreffen des Kunden im Studio. Bei verspätetem Eintreffen besteht ein
-              Anspruch auf Behandlung nur während der vereinbarten Behandlungsdauer. Ich bin zudem berechtigt, die volle
-              Behandlungszeit zu berechnen, wenn die Behandlungsdauer aufgrund eines nachfolgenden Termins pünktlich
-              beendet werden muss.
-            </p>
+              <p>
+                <b> § 6 Gewährleistung und Haftung</b><br />
+                a) Eine Garantie bezüglich Verträglichkeit und Erfolg kann nicht
+                gegeben werden. Dies trifft insbesondere dann zu, wenn Fragen im
+                Vorgespräch seitens des Kunden nicht ausreichend oder nicht
+                wahrheitsgemäß beantwortet wurden.
+                <br />
+                b) Der Kunde hat mir offensichtliche Behandlungsmängel binnen 3
+                Kalendertagen, nachdem er den Mangel erkennen konnte,
+                anzuzeigen. Anderenfalls sind Gewährleistungsansprüche
+                ausgeschlossen.
+                <br />
+                c) Mängelanzeigen des Kunden bedürfen zu ihrer Wirksamkeit der
+                Schriftform.
+                <br />
+                d) Im Übrigen richten sich die Gewährleistungsansprüche des
+                Kunden nach den gesetzlichen Bestimmungen.
+                <br />
+                e) Schadensersatzansprüche des Kunden verfallen mit Ablauf von
+                drei Monaten nach der vertraglich vorgesehenen Beendigung der
+                Behandlung, sofern die Ansprüche nicht innerhalb dieser Frist
+                geltend gemacht werden. Nach Ablauf der Frist kann der Kunde
+                Ansprüche nur geltend machen, wenn er ohne Verschulden an der
+                Einhaltung der Frist verhindert worden ist.
+                <br />
+                f) Alle Schadensersatzansprüche verjähren in einem Jahr nach
+                ihrer Entstehung. Dies gilt nicht für Ansprüche aus unerlaubter
+                Handlung.
+              </p>
 
-            <p>
-              <b>§ 5 Preise und Zahlungsbedingungen</b><br>
+              <p>
+                <b> § 7 Haftungsausschluss</b><br />
 
-              1. Sofern im Einzelfall nichts anderes vereinbart ist, gilt meine jeweils zum Zeitpunkt des
-              Vertragsschlusses aktuelle Preisliste auf meiner Website.
-              <br>
-              2. Die Zahlungen für die Behandlung und/oder des Kaufpreises sind nach der Behandlung bzw. bei Übergabe
-              der
-              Verkaufsware sofort in bar oder per Überweisung fällig. Bei Verkäufen von Gutscheinen gilt dies
-              entsprechend.
-              <br>
-              3. In begründeten Fällen können Termine nur nach entsprechender Vorauszahlung angenommen werden.
-            </p>
+                a) Versäumt es der Kunde, mich vor Behandlungsbeginn über
+                bestehende Krankheitsbilder, Infekte oder Allergien zu
+                informieren, die einer Behandlung entgegenstehen oder diese
+                beeinträchtigen können, bin ich von jeder Haftung freigestellt.
+                Um meine Kunden optimal betreuen zu können, bitte ich um
+                wahrheitsgemäße Angaben. Sollten mir diese verschwiegen bleiben,
+                übernehme ich für eventuelle Schäden jeglicher Art keine
+                Haftung. Damit ist auch eine Reklamation ausgeschlossen.
+                Gleiches gilt für Schäden, die dadurch entstehen, weil ein
+                Ausschlussgrund dem Kunden selbst nicht bekannt und für mich
+                nicht erkennbar war.
+                <br />
+                b) Meine Haftung für vertragliche Pflichtverletzungen sowie aus
+                Delikt, ist auf Vorsatz und grobe Fahrlässigkeit beschränkt.
+                Dies gilt nicht bei Verletzung einer wesentlichen
+                Vertragspflicht, d.h. einer Pflicht, deren Erfüllung die
+                ordnungsgemäße Durchführung des Vertrages überhaupt erst
+                ermöglicht und auf deren Einhaltung der Kunde vertraut und
+                vertrauen darf. Bei leichter Fahrlässigkeit ist die Haftung
+                jedoch auf den Ersatz des vorhersehbaren, typischerweise
+                eintretenden Schaden begrenzt.
+                <br />
+                c) Falls der Kunde die Anweisungen bzw. Empfehlungen von mir,
+                die der Behandlungsvor- oder Nachbereitung dienen, nicht oder
+                nur beschränkt befolgt, entfällt meine Haftung.
+                <br />
+                d) Für Wertgegenstände, die vom Kunden mitgeführt werden oder in
+                meinem Studio vergessen wurden, übernehme ich keine Haftung.
+                <br />
+                d) Irrtümer und Änderungen vorbehalten. Alle Veröffentlichungen
+                erfolgen ohne Gewähr. Für Schäden aufgrund fehlerhafter
+                Informationen oder Veröffentlichungen wird keine Haftung
+                übernommen.
+              </p>
+              <p>
+                <b> § 8 Warengeschäft</b><br />
 
-            <p>
-              <b> § 6 Gewährleistung und Haftung</b><br>
-              a) Eine Garantie bezüglich Verträglichkeit und Erfolg kann nicht gegeben werden. Dies trifft insbesondere
-              dann zu, wenn Fragen im Vorgespräch seitens des Kunden nicht ausreichend oder nicht wahrheitsgemäß
-              beantwortet wurden.
-              <br>
-              b) Der Kunde hat mir offensichtliche Behandlungsmängel binnen 3 Kalendertagen, nachdem er den Mangel
-              erkennen konnte, anzuzeigen. Anderenfalls sind Gewährleistungsansprüche ausgeschlossen.
-              <br>
-              c) Mängelanzeigen des Kunden bedürfen zu ihrer Wirksamkeit der Schriftform.
-              <br>
-              d) Im Übrigen richten sich die Gewährleistungsansprüche des Kunden nach den gesetzlichen Bestimmungen.
-              <br>
-              e) Schadensersatzansprüche des Kunden verfallen mit Ablauf von drei Monaten nach der vertraglich
-              vorgesehenen Beendigung der Behandlung, sofern die Ansprüche nicht innerhalb dieser Frist geltend gemacht
-              werden. Nach Ablauf der Frist kann der Kunde Ansprüche nur geltend machen, wenn er ohne Verschulden an der
-              Einhaltung der Frist verhindert worden ist.
-              <br>
-              f) Alle Schadensersatzansprüche verjähren in einem Jahr nach ihrer Entstehung. Dies gilt nicht für
-              Ansprüche
-              aus unerlaubter Handlung.
-            </p>
+                1. Eigentumsvorbehalt Die Ware bleibt bis zur vollständigen
+                Zahlung Eigentum des Verkäufers.
+                <br />
+                2. Warenmängel Im Rahmen der Gewährleistung finden die
+                gesetzlichen Regelungen Anwendung. Bei berechtigten
+                Fabrikationsfehlern erhält der Kunde Ersatz. Sonstige Ansprüche
+                sind ausgeschlossen.
+                <br />
+                3. Warenumtausch Bei Nichtgefallen können Kosmetikprodukte aus
+                hygienischen Gründen nicht umgetauscht/reklamiert werden. Ein
+                Umtausch erfolgt ausschließlich nach Vorlage eines
+                Unverträglichkeitsnachweises.
+              </p>
+              <p>
+                <b> § 9 Geschenkgutscheine und Aktionen</b><br />
 
-            <p>
+                1. Geschenkgutscheine können nicht in bar ausgezahlt werden. Der
+                Anspruch aus dem Gutschein verjährt nach der regelmäßigen
+                Verjährungsfrist des § 195 BGB in drei Jahren. Die Verjährung
+                beginnt mit dem Ende des Jahres, in dem der Gutschein
+                ausgestellt wurde.
+                <br />
+                2. Angebots-Aktionen gelten ausschließlich in der
+                ausgeschriebenen Frist und sind in dieser Zeit wahrzunehmen bzw.
+                gelten solange diese vorrätig sind.
+                <br />
+                3. Sonderaktionen können ohne Ankündigung umgehend beendet
+                werden. Unbefristete Aktionen enden spätestens mit Ablauf von 4
+                Wochen nach Bekanntgabe der Aktion. Sämtliche Sonderaktionen
+                sind nur gültig, solange diese auch vorrätig sind.
+              </p>
+              <p>
+                <b>§ 10 Änderungsvorbehalte</b><br />
 
-              <b> § 7 Haftungsausschluss</b><br>
+                1. Ich behalte mir zwischenzeitliche Änderungen in Art und
+                Umfang der Behandlungen sowie der Preise vor.
+              </p>
+              <p>
+                <b>§ 11 AGB, Preisliste</b><br />
 
-              a) Versäumt es der Kunde, mich vor Behandlungsbeginn über bestehende Krankheitsbilder, Infekte oder
-              Allergien zu informieren, die einer Behandlung entgegenstehen oder diese beeinträchtigen können, bin ich
-              von
-              jeder Haftung freigestellt. Um meine Kunden optimal betreuen zu können, bitte ich um wahrheitsgemäße
-              Angaben. Sollten mir diese verschwiegen bleiben, übernehme ich für eventuelle Schäden jeglicher Art keine
-              Haftung. Damit ist auch eine Reklamation ausgeschlossen. Gleiches gilt für Schäden, die dadurch entstehen,
-              weil ein Ausschlussgrund dem Kunden selbst nicht bekannt und für mich nicht erkennbar war.
-              <br>
-              b) Meine Haftung für vertragliche Pflichtverletzungen sowie aus Delikt, ist auf Vorsatz und grobe
-              Fahrlässigkeit beschränkt. Dies gilt nicht bei Verletzung einer wesentlichen Vertragspflicht, d.h. einer
-              Pflicht, deren Erfüllung die ordnungsgemäße Durchführung des Vertrages überhaupt erst ermöglicht und auf
-              deren Einhaltung der Kunde vertraut und vertrauen darf. Bei leichter Fahrlässigkeit ist die Haftung jedoch
-              auf den Ersatz des vorhersehbaren, typischerweise eintretenden Schaden begrenzt.
-              <br>
-              c) Falls der Kunde die Anweisungen bzw. Empfehlungen von mir, die der Behandlungsvor- oder Nachbereitung
-              dienen, nicht oder nur beschränkt befolgt, entfällt meine Haftung.
-              <br>
-              d) Für Wertgegenstände, die vom Kunden mitgeführt werden oder in meinem Studio vergessen wurden, übernehme
-              ich keine Haftung.
-              <br>
-              d) Irrtümer und Änderungen vorbehalten. Alle Veröffentlichungen erfolgen ohne Gewähr. Für Schäden aufgrund
-              fehlerhafter Informationen oder Veröffentlichungen wird keine Haftung übernommen.
-            </p>
-            <p>
-              <b> § 8 Warengeschäft</b><br>
+                1. Bei Erscheinen neuer AGB bzw. neuer Angebots- und Preislisten
+                verlieren alle vorherigen ihre Gültigkeit. Es gilt deutsches
+                Recht unter Ausschluss des UN-Kaufrechts.
+              </p>
+              <p>
+                <b>§ 12 Schlussbestimmungen</b><br />
 
-              1. Eigentumsvorbehalt
-              Die Ware bleibt bis zur vollständigen Zahlung Eigentum des Verkäufers.
-              <br>
-              2. Warenmängel
-              Im Rahmen der Gewährleistung finden die gesetzlichen Regelungen Anwendung. Bei berechtigten
-              Fabrikationsfehlern erhält der Kunde Ersatz. Sonstige Ansprüche sind ausgeschlossen.
-              <br>
-              3. Warenumtausch
-              Bei Nichtgefallen können Kosmetikprodukte aus hygienischen Gründen nicht umgetauscht/reklamiert werden.
-              Ein Umtausch erfolgt ausschließlich nach Vorlage eines Unverträglichkeitsnachweises.
-            </p>
-            <p>
-              <b> § 9 Geschenkgutscheine und Aktionen</b><br>
-
-              1. Geschenkgutscheine können nicht in bar ausgezahlt werden. Der Anspruch aus dem Gutschein verjährt nach
-              der regelmäßigen Verjährungsfrist des § 195 BGB in drei Jahren. Die Verjährung beginnt mit dem Ende des
-              Jahres, in dem der Gutschein ausgestellt wurde.
-              <br>
-              2. Angebots-Aktionen gelten ausschließlich in der ausgeschriebenen Frist und sind in dieser Zeit
-              wahrzunehmen bzw. gelten solange diese vorrätig sind.
-              <br>
-              3. Sonderaktionen können ohne Ankündigung umgehend beendet werden. Unbefristete Aktionen enden spätestens
-              mit Ablauf von 4 Wochen nach Bekanntgabe der Aktion. Sämtliche Sonderaktionen sind nur gültig, solange
-              diese
-              auch vorrätig sind.
-            </p>
-            <p>
-
-              <b>§ 10 Änderungsvorbehalte</b><br>
-
-              1. Ich behalte mir zwischenzeitliche Änderungen in Art und Umfang der Behandlungen sowie der Preise vor.
-            </p>
-            <p>
-              <b>§ 11 AGB, Preisliste</b><br>
-
-              1. Bei Erscheinen neuer AGB bzw. neuer Angebots- und Preislisten verlieren alle vorherigen ihre
-              Gültigkeit.
-              Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts.
-            </p>
-            <p>
-              <b>§ 12 Schlussbestimmungen</b><br>
-
-              1. Dem Kunden stehen Aufrechnungs- oder Zurückbehaltungsrechte nur insoweit zu, als sein Anspruch
-              rechtskräftig festgestellt oder unbestritten ist.
-              <br>
-              2. Der Kunde ist nicht berechtigt, seine Ansprüche aus dem Vertrag abzutreten.
-              <br>
-              3. Von den allgemeinen Geschäftsbedingungen abweichende Vereinbarungen bedürfen der Schriftform.
-              <br>
-              4. Erfüllungsort und Gerichtsstand ist der Sitz des Studios.
-              <br>
-              5. Sollte eine oder mehrere der vorstehenden Bestimmungen ungültig sein, so soll die Wirksamkeit der
-              übrigen
-              Bestimmungen hiervon nicht berührt werden. Dies gilt auch, wenn innerhalb einer Regelung ein Teil
-              unwirksam,
-              ein anderer Teil aber wirksam ist. Die jeweils unwirksame Bestimmung soll von den Parteien durch eine
-              Regelung ersetzt werden, die den wirtschaftlichen Interessen der Vertragsparteien am nächsten kommt und
-              die
-              den übrigen vertraglichen Vereinbarungen nicht zuwider läuft.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-              Zurück
-            </button>
+                1. Dem Kunden stehen Aufrechnungs- oder Zurückbehaltungsrechte
+                nur insoweit zu, als sein Anspruch rechtskräftig festgestellt
+                oder unbestritten ist.
+                <br />
+                2. Der Kunde ist nicht berechtigt, seine Ansprüche aus dem
+                Vertrag abzutreten.
+                <br />
+                3. Von den allgemeinen Geschäftsbedingungen abweichende
+                Vereinbarungen bedürfen der Schriftform.
+                <br />
+                4. Erfüllungsort und Gerichtsstand ist der Sitz des Studios.
+                <br />
+                5. Sollte eine oder mehrere der vorstehenden Bestimmungen
+                ungültig sein, so soll die Wirksamkeit der übrigen Bestimmungen
+                hiervon nicht berührt werden. Dies gilt auch, wenn innerhalb
+                einer Regelung ein Teil unwirksam, ein anderer Teil aber wirksam
+                ist. Die jeweils unwirksame Bestimmung soll von den Parteien
+                durch eine Regelung ersetzt werden, die den wirtschaftlichen
+                Interessen der Vertragsparteien am nächsten kommt und die den
+                übrigen vertraglichen Vereinbarungen nicht zuwider läuft.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Zurück
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
 
-  </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
 
-  <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Option 1: Bootstrap Bundle with Popper.js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
-    crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper.js and Bootstrap JS
+    <!-- Option 2: Separate Popper.js and Bootstrap JS
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-t6I8D5dJmMXjCsRLhSzCltuhNZg6P10kE0m0nAncLUjH6GeYLhRU1zfLoW3QNQDF" crossorigin="anonymous"></script>
    -->
-</body>
-
+  </body>
 </html>
